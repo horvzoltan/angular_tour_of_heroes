@@ -23,6 +23,7 @@
   display: flex;
   align-items: stretch;
   height: 1.8em;
+  width: 100%;
 }
 
 .heroes button:hover {
@@ -67,4 +68,9 @@
 
 .heroes .name {
   align-self: center;
+}
+
+a{
+  text-decoration: none;
+  width: 100%;
 }
