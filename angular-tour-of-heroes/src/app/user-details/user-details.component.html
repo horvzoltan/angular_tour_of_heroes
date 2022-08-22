@@ -1,0 +1,21 @@
+<div class='tablecon'>
+  <table>
+    <tr>
+      <th>DOB</th>
+      <th>Gender</th>
+      <th>Email</th>
+      <th>Location</th>
+      <th>Phone</th>
+    </tr>
+    <tr>
+      <td>{{user?.dob?.date | date }}</td>
+      <td>{{user?.gender}}</td>
+      <td>{{user?.email}}</td>
+      <td>{{user?.location?.country}}</td>
+      <td>{{user?.phone}}</td>
+    </tr>
+  </table>
+</div>
+<div class='imagecon'>
+  <img src='{{user?.picture?.large}}' alt=''>
+</div>

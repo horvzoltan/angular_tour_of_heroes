@@ -10,7 +10,7 @@ import {User} from '../user';
 })
 export class UserListComponent implements OnInit {
   users: User[] = [];
-
+  currentUser?: User;
   constructor(private userService: UserService) {
   }
 
@@ -24,7 +24,9 @@ export class UserListComponent implements OnInit {
         this.users = next.results;
       });
   }
-
+  selectUser(user: User){
+    this.currentUser = user;
+  }
   filteredUsers(): User[] {
     return this.users.filter((u)=> u.gender === 'female');
   }

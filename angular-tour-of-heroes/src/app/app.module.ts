@@ -12,6 +12,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { UserListComponent } from './user-list/user-list.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { UserListComponent } from './user-list/user-list.component';
     MessagesComponent,
     DashboardComponent,
     HeroSearchComponent,
-    UserListComponent
+    UserListComponent,
+    UserDetailsComponent
   ],
     imports: [
         BrowserModule,

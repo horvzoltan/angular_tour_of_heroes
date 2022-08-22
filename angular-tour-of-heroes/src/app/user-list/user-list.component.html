@@ -1,18 +1,16 @@
-<table>
-  <tr>
-    <th>Gender</th>
-    <th>Title</th>
-    <th>Firstname</th>
-    <th>Lastname</th>
-    <th>Location</th>
-    <th>Email</th>
-  </tr>
-  <tr *ngFor='let user of filteredUsers()'>
-      <td>{{user.gender}}</td>
-      <td>{{user.name.title}}</td>
-      <td>{{user.name.first}}</td>
-      <td>{{user.name.last}}</td>
-      <td>{{user.location.country}}</td>
-      <td>{{user.email}}</td>
-  </tr>
-</table>
+<header>
+  <h1><span [hidden]='!currentUser'>{{currentUser?.name?.title}}. {{currentUser?.name?.first}} {{currentUser?.name?.last}}</span></h1>
+</header>
+
+<h2>Fetched Users:</h2>
+<section class='container'>
+  <div class='list'>
+    <ul>
+      <li class='users' *ngFor='let user of filteredUsers()' (click)='selectUser(user)'>
+        {{user.email}}
+      </li>
+    </ul>
+  </div>
+</section>
+
+<app-user-details [user]='currentUser' [hidden]='!currentUser'></app-user-details>
