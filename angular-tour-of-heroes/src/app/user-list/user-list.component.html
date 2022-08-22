@@ -1,0 +1,18 @@
+<table>
+  <tr>
+    <th>Gender</th>
+    <th>Title</th>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Location</th>
+    <th>Email</th>
+  </tr>
+  <tr *ngFor='let user of filteredUsers()'>
+      <td>{{user.gender}}</td>
+      <td>{{user.name.title}}</td>
+      <td>{{user.name.first}}</td>
+      <td>{{user.name.last}}</td>
+      <td>{{user.location.country}}</td>
+      <td>{{user.email}}</td>
+  </tr>
+</table>

@@ -14,7 +14,13 @@ export class HeroService {
   private heroesUrl = 'api/heroes';
 
   httpOptions = {
-    headers: new HttpHeaders({'Content-Type': 'application/json'})
+    headers: new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Headers': 'Content-Type',
+      'Access-Control-Allow-Methods': 'GET,POST,OPTIONS,DELETE,PUT',
+      'Authorization': 'Bearer key',
+    })
   };
 
   constructor(private messageService: MessageService,

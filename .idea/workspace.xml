@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f2cb659-bcec-4ec9-99e4-9128a135c3aa" name="Changes" comment="feature: finished services">
+      <change afterPath="$PROJECT_DIR$/angular-tour-of-heroes/proxy.conf.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/dashboard/dashboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/dashboard/dashboard.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/hero-detail/hero-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/hero-detail/hero-detail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/hero-detail/hero-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/hero-detail/hero-detail.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/hero.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/hero.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/heroes/heroes.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/heroes/heroes.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/heroes/heroes.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/heroes/heroes.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/heroes/heroes.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/heroes/heroes.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/in-memory-data.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/in-memory-data.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/in-memory-data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/in-memory-data.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,10 +38,16 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "C:\\Users\\ZOhorvath\\Documents\\GitHub\\angular_tour_of_heroes\\angular-tour-of-heroes\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ZOhorvath\Documents\GitHub\angular_tour_of_heroes\angular-tour-of-heroes" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,6 +60,7 @@
       <workItem from="1660809654776" duration="3851000" />
       <workItem from="1660900389087" duration="308000" />
       <workItem from="1660900710118" duration="3958000" />
+      <workItem from="1661155123477" duration="10728000" />
     </task>
     <task id="LOCAL-00001" summary="feature: finished services">
       <created>1660815287188</created>
