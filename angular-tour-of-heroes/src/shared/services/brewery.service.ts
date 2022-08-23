@@ -2,8 +2,8 @@ import {Injectable} from '@angular/core';
 import {Observable, of} from 'rxjs';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {catchError, tap} from 'rxjs/operators';
-import {Hero} from './hero';
-import {Brewery} from './brewery';
+import {Hero} from '../interfaces/hero';
+import {Brewery} from '../interfaces/brewery';
 
 @Injectable({
   providedIn: 'root'

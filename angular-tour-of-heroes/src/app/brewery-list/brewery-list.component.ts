@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {BreweryService} from '../brewery.service';
-import {Brewery} from '../brewery';
+import {BreweryService} from '../../shared/services/brewery.service';
+import {Brewery} from '../../shared/interfaces/brewery';
 
 @Component({
   selector: 'app-brewery-list',
@@ -26,8 +26,5 @@ export class BreweryListComponent implements OnInit {
   }
   selectBrewery(brews: Brewery){
     this.currentBrewery = brews;
-  }
-  filteredBrews(): Brewery[] {
-    return this.brews;
   }
 }

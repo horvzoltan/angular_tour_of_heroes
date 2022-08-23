@@ -6,6 +6,9 @@ header {
 header h1 {
   padding: 10px;
 }
+ul {
+  padding: 0;
+}
 
 .head{
   color: white;
@@ -21,7 +24,7 @@ header h1 {
   border-radius: 3px;
   margin: 10px 0px 10px 0px;
   padding: 10px;
-  background-color: gray;
+  background-color: #f1b24b;
 }
 .brews {
   list-style-type: none;

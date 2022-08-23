@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f2cb659-bcec-4ec9-99e4-9128a135c3aa" name="Changes" comment="feature: Completed without styling">
-      <change afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/assets/pexels-amanda-klamrowski-1400255.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/assets/pexels-pixabay-159291.jpg" afterDir="false" />
+    <list default="true" id="6f2cb659-bcec-4ec9-99e4-9128a135c3aa" name="Changes" comment="feature: New changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/user-details/user-details.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-details/brewery-details.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/user-details/user-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-details/brewery-details.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/user-details/user-details.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/user-details/user-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-details/brewery-details.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/user-list/user-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-list/brewery-list.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/user-list/user-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-list/brewery-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/user-list/user-list.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/user-list/user-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-list/brewery-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/user.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/user.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-details/brewery-details.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-details/brewery-details.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-details/brewery-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-details/brewery-details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-details/brewery-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-details/brewery-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-list/brewery-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-list/brewery-list.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-list/brewery-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-list/brewery-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-list/brewery-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-list/brewery-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/shared/services/brewery.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/shared/interfaces/brewery.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/dashboard/dashboard.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/dashboard/dashboard.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/hero-detail/hero-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/hero-detail/hero-detail.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/hero-search/hero-search.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/hero-search/hero-search.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/hero.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/hero.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/shared/services/hero.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/hero.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/shared/interfaces/hero.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/heroes/heroes.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/heroes/heroes.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/in-memory-data.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/in-memory-data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/shared/services/in-memory-data.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/message.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/message.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/shared/services/message.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/messages/messages.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/messages/messages.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/mock-heroes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/shared/mock-heroes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,8 +57,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ZOhorvath\Documents\GitHub\angular_tour_of_heroes\angular-tour-of-heroes\src\shared" />
+      <recent name="C:\Users\ZOhorvath\Documents\GitHub\angular_tour_of_heroes\angular-tour-of-heroes\src\shared\interfaces" />
+      <recent name="C:\Users\ZOhorvath\Documents\GitHub\angular_tour_of_heroes\angular-tour-of-heroes\src\shared\services" />
+      <recent name="C:\Users\ZOhorvath\Documents\GitHub\angular_tour_of_heroes\angular-tour-of-heroes\src" />
       <recent name="C:\Users\ZOhorvath\Documents\GitHub\angular_tour_of_heroes\angular-tour-of-heroes\src\assets" />
-      <recent name="C:\Users\ZOhorvath\Documents\GitHub\angular_tour_of_heroes\angular-tour-of-heroes" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -75,7 +79,7 @@
       <workItem from="1661155123477" duration="10728000" />
       <workItem from="1661175681533" duration="556000" />
       <workItem from="1661177857185" duration="109000" />
-      <workItem from="1661243627281" duration="12302000" />
+      <workItem from="1661243627281" duration="15292000" />
     </task>
     <task id="LOCAL-00001" summary="feature: finished services">
       <created>1660815287188</created>
@@ -91,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660900848786</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feature: New changes">
+      <created>1661262475302</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661262475302</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +121,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feature: finished services" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature: finished services" />
+    <MESSAGE value="feature: New changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: New changes" />
   </component>
 </project>

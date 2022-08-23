@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Brewery} from '../brewery';
+import {Brewery} from '../../shared/interfaces/brewery';
 import {ActivatedRoute} from '@angular/router';
 import {Location} from '@angular/common';
 
