@@ -1,17 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f2cb659-bcec-4ec9-99e4-9128a135c3aa" name="Changes" comment="feature: finished services">
-      <change afterPath="$PROJECT_DIR$/angular-tour-of-heroes/proxy.conf.json" afterDir="false" />
+    <list default="true" id="6f2cb659-bcec-4ec9-99e4-9128a135c3aa" name="Changes" comment="feature: Completed without styling">
+      <change afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/assets/pexels-amanda-klamrowski-1400255.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/assets/pexels-pixabay-159291.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/hero.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/hero.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/in-memory-data.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/in-memory-data.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/in-memory-data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/in-memory-data.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/user-details/user-details.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-details/brewery-details.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/user-details/user-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-details/brewery-details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/user-details/user-details.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/user-details/user-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-details/brewery-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/user-list/user-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-list/brewery-list.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/user-list/user-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-list/brewery-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/user-list/user-list.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/user-list/user-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-list/brewery-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/user.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/user.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,19 +43,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Users\\ZOhorvath\\Documents\\GitHub\\angular_tour_of_heroes\\angular-tour-of-heroes\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\ZOhorvath\\Documents\\GitHub\\angular_tour_of_heroes\\angular-tour-of-heroes\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ZOhorvath\Documents\GitHub\angular_tour_of_heroes\angular-tour-of-heroes\src\assets" />
       <recent name="C:\Users\ZOhorvath\Documents\GitHub\angular_tour_of_heroes\angular-tour-of-heroes" />
     </key>
   </component>
@@ -61,6 +73,9 @@
       <workItem from="1660900389087" duration="308000" />
       <workItem from="1660900710118" duration="3958000" />
       <workItem from="1661155123477" duration="10728000" />
+      <workItem from="1661175681533" duration="556000" />
+      <workItem from="1661177857185" duration="109000" />
+      <workItem from="1661243627281" duration="12302000" />
     </task>
     <task id="LOCAL-00001" summary="feature: finished services">
       <created>1660815287188</created>

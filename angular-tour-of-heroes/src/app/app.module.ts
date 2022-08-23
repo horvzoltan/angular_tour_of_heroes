@@ -11,8 +11,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import {HttpClientModule} from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
-import { UserListComponent } from './user-list/user-list.component';
-import { UserDetailsComponent } from './user-details/user-details.component';
+import { BreweryListComponent } from './brewery-list/brewery-list.component';
+import { BreweryDetailsComponent } from './brewery-details/brewery-details.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +22,8 @@ import { UserDetailsComponent } from './user-details/user-details.component';
     MessagesComponent,
     DashboardComponent,
     HeroSearchComponent,
-    UserListComponent,
-    UserDetailsComponent
+    BreweryListComponent,
+    BreweryDetailsComponent
   ],
     imports: [
         BrowserModule,

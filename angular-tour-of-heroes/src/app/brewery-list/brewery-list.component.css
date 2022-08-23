@@ -1,0 +1,49 @@
+header {
+  min-height: 150px;
+  font-size: 23px;
+}
+
+header h1 {
+  padding: 10px;
+}
+
+.head{
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 3px;
+  background-image: url("https://images.pexels.com/photos/1267682/pexels-photo-1267682.jpeg");
+  background-position: center;
+  background-size: 70%;
+}
+
+.mid {
+  border-radius: 3px;
+  margin: 10px 0px 10px 0px;
+  padding: 10px;
+  background-color: gray;
+}
+.brews {
+  list-style-type: none;
+  margin: 3px;
+}
+
+#name-list{
+  cursor: pointer;
+  border-radius: 2px;
+  padding: 2px;
+}
+
+#name-list:hover{
+  background-color: #d68438;
+  text-decoration: underline;
+}
+
+.selected {
+  background-color: #d68438;
+  text-decoration: underline;
+  border-radius: 3px;
+}
+
+
+

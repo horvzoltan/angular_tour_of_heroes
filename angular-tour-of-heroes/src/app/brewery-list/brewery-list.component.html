@@ -1,0 +1,21 @@
+<section class='container head'>
+  <header>
+    <h1 class='selected'><span [hidden]='!currentBrewery'>{{currentBrewery?.name}}</span></h1>
+  </header>
+</section>
+
+
+<h2>Fetched Brews:</h2>
+<section class='container mid'>
+  <div class='list'>
+    <ul>
+      <li class='brews' *ngFor='let brewery of filteredBrews()'>
+        <div *ngIf='brewery.street'>
+         <span id='name-list' (click)='selectBrewery(brewery)' [ngClass]="brewery === currentBrewery ? 'selected': ''">{{brewery.name}}</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<app-brewery-details [brewery]='currentBrewery' [hidden]='!currentBrewery'></app-brewery-details>
