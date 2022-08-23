@@ -2,7 +2,6 @@ import {Injectable} from '@angular/core';
 import {Observable, of} from 'rxjs';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {catchError, tap} from 'rxjs/operators';
-import {Hero} from '../interfaces/hero';
 import {Brewery} from '../interfaces/brewery';
 
 @Injectable({
@@ -31,7 +30,6 @@ export class BreweryService {
         catchError(this.handleError<Brewery[]>('getAllBrews', []))
       );
   }
-
 
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
