@@ -4,10 +4,9 @@
   </header>
 </section>
 
-
-<h2>Fetched Brews:</h2>
 <section class='container mid'>
   <div class='list'>
+    <h2>Fetched Brews:</h2>
     <ul>
       <li class='brews' *ngFor='let brewery of brews'>
         <div *ngIf='brewery.street'>
@@ -16,6 +15,9 @@
       </li>
     </ul>
   </div>
+  <div class='table'>
+    <app-brewery-details [brewery]='currentBrewery' [hidden]='!currentBrewery'></app-brewery-details>
+  </div>
 </section>
 
-<app-brewery-details [brewery]='currentBrewery' [hidden]='!currentBrewery'></app-brewery-details>
+

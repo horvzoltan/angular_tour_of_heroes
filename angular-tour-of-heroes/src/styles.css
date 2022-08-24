@@ -2,9 +2,10 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  color: white;
-  background-color: black;
+  font-weight: 400;
+  color: #283953;
+  margin: 0;
+  background-image: url("https://images.pexels.com/photos/6346098/pexels-photo-6346098.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
 }
 
 
