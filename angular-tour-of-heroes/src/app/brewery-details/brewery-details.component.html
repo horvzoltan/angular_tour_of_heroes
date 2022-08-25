@@ -10,7 +10,13 @@
       <td>{{brewery?.name}}</td>
       <td>{{brewery?.postal_code}}</td>
       <td>{{brewery?.phone}}</td>
-      <td>{{brewery?.created_at | date}}</td>
+      <td>
+        HUN:
+        {{brewery?.created_at | date:'yyyy/MM/dd'}}
+        <br>
+        USA:
+        {{brewery?.created_at | date:'MM/dd/yyyy'}}
+      </td>
     </tr>
   </table>
 </div>

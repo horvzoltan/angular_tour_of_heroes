@@ -64,16 +64,14 @@ ul {
 @media only screen and (max-width: 1200px) {
   .mid {
     flex-direction: column;
+    width: 90%;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  section {
-    width: auto;
-    margin-right: 5px;
-    margin-left: 5px;
+  .mid {
+    width: 97%;
   }
-
   .head h1{
     font-size: 25px;
   }
