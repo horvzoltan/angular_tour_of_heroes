@@ -57,6 +57,10 @@ table {
   font-size: 25px;
   font-weight: 400;
 }
+.small-width-container h4{
+  font-size: 23px;
+  font-weight: 350;
+}
 
 @media only screen and (max-width: 500px) {
   .tablecon {
