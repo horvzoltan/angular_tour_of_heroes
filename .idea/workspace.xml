@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f2cb659-bcec-4ec9-99e4-9128a135c3aa" name="Changes" comment="feature: New changes">
-      <change afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/assets/beer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/assets/toast.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-details/brewery-details.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-details/brewery-details.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-details/brewery-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-details/brewery-details.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-list/brewery-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-list/brewery-list.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-list/brewery-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-list/brewery-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-list/brewery-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-list/brewery-list.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +67,7 @@
       <workItem from="1661267154513" duration="29000" />
       <workItem from="1661424163915" duration="3389000" />
       <workItem from="1661503202658" duration="2842000" />
-      <workItem from="1661756809309" duration="12591000" />
+      <workItem from="1661756809309" duration="12731000" />
     </task>
     <task id="LOCAL-00001" summary="feature: finished services">
       <created>1660815287188</created>
@@ -124,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661765864248</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feature: New changes">
+      <created>1661774901618</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1661774901618</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
