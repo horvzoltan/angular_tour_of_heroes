@@ -13,6 +13,7 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { BreweryListComponent } from './brewery-list/brewery-list.component';
 import { BreweryDetailsComponent } from './brewery-details/brewery-details.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { BreweryDetailsComponent } from './brewery-details/brewery-details.compo
     DashboardComponent,
     HeroSearchComponent,
     BreweryListComponent,
-    BreweryDetailsComponent
+    BreweryDetailsComponent,
+    FooterComponent
   ],
     imports: [
         BrowserModule,

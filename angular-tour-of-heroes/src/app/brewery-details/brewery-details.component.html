@@ -1,22 +1,39 @@
 <div class='tablecon'>
-  <table>
-    <tr>
-      <th>Name</th>
-      <th>Postal Code</th>
-      <th>Phone</th>
-      <th>Created at</th>
-    </tr>
-    <tr>
-      <td>{{brewery?.name}}</td>
-      <td>{{brewery?.postal_code}}</td>
-      <td>{{brewery?.phone}}</td>
-      <td>
-        HUN:
-        {{brewery?.created_at | date:'yyyy/MM/dd'}}
-        <br>
-        USA:
-        {{brewery?.created_at | date:'MM/dd/yyyy'}}
-      </td>
-    </tr>
-  </table>
+  <div class='large-width-container'>
+    <table>
+      <tr class='head-container'>
+        <th>Name</th>
+        <th>Postal Code</th>
+        <th>Phone</th>
+        <th>Created at</th>
+      </tr>
+      <tr class='property-container'>
+        <td>{{brewery?.name}}</td>
+        <td>{{brewery?.postal_code}}</td>
+        <td>{{brewery?.phone}}</td>
+        <td>
+          HUN:
+          {{brewery?.created_at | date:'yyyy/MM/dd'}}
+          <br>
+          USA:
+          {{brewery?.created_at | date:'MM/dd/yyyy'}}
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class='small-width-container'>
+    <h2>Name</h2>
+    <h4>{{brewery?.name}}</h4>
+    <div class='separator'></div>
+    <h2>Postal Code</h2>
+    <h4>{{brewery?.postal_code}}</h4>
+    <div class='separator'></div>
+    <h2>Phone</h2>
+    <h4>{{brewery?.phone}}</h4>
+    <div class='separator'></div>
+    <h2>Created at</h2>
+    <h4>HUN: {{brewery?.created_at | date:'yyyy/MM/dd'}}</h4>
+    <h4>USA: {{brewery?.created_at | date:'MM/dd/yyyy'}}</h4>
+  </div>
 </div>

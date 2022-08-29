@@ -1,12 +1,11 @@
 <section class='container head'>
   <header>
-    <h1 [ngClass]="currentBrewery ? 'selected': ''"><span [hidden]='!currentBrewery'>{{currentBrewery?.name}}</span></h1>
+    <h1><span [hidden]='!currentBrewery'>{{currentBrewery?.name}}</span></h1>
   </header>
 </section>
 
 <section class='container mid'>
   <div class='list'>
-    <h2>Fetched Brews:</h2>
     <ul>
       <li class='brews' *ngFor='let brewery of brews'>
         <div *ngIf='brewery.street'>

@@ -1,11 +1,12 @@
 section {
+  margin-bottom: 15px;
   margin-right: auto;
   margin-left: auto;
   width: 80%;
 }
 
 header {
-  min-height: 150px;
+  min-height: 120px;
   font-size: 23px;
 }
 
@@ -24,6 +25,7 @@ ul {
   background-position: center;
   background-size: 70%;
   width: 100%;
+  background-color: rgba(22,47,74,0.25);
 }
 
 .mid {
@@ -37,11 +39,10 @@ ul {
 }
 
 .list {
-  background-color: white;
+  background-color: rgba(255,255,255, .65);
   padding: 10px;
   border-radius: 10px;
   min-width: 250px;
-  border: 1px solid #283953;
 }
 
 #name-list {
@@ -55,7 +56,7 @@ ul {
 }
 
 .selected {
-  background-color: #f6bd04;
+  background-color: rgba(22,47,74,0.8);
   color: white;
   text-decoration: underline;
   border-radius: 3px;
@@ -73,7 +74,7 @@ ul {
     width: 97%;
   }
   .head h1{
-    font-size: 25px;
+    font-size: 1.2em;
   }
 
   .list {
