@@ -1,6 +1,8 @@
 <section class='container head'>
   <header>
-    <h1><span [hidden]='!currentBrewery'>{{currentBrewery?.name}}</span></h1>
+    <h1>
+      <span [hidden]='!currentBrewery'>{{currentBrewery?.name}}</span>
+    </h1>
   </header>
 </section>
 
@@ -8,8 +10,10 @@
   <div class='list'>
     <ul>
       <li class='brews' *ngFor='let brewery of brews'>
-        <div *ngIf='brewery.street'>
-         <span id='name-list' (click)='selectBrewery(brewery)' [ngClass]="brewery === currentBrewery ? 'selected': ''">{{brewery.name}}</span>
+        <div class='beer-container' (click)='selectBrewery(brewery)'
+             [ngClass]="brewery === currentBrewery ? 'selected': ''" *ngIf='brewery.street'>
+          <img class='beer-icon' src='./assets/beer.png'/>
+          <span id='name-list'>{{brewery.name}}</span>
         </div>
       </li>
     </ul>

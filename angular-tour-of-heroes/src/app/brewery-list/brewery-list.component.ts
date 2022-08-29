@@ -22,6 +22,7 @@ export class BreweryListComponent implements OnInit {
     this.breweryService.getAllBrews().subscribe(
       next => {
         this.brews = next;
+        this.currentBrewery = this.brews[0];
       });
   }
   selectBrewery(brews: Brewery){

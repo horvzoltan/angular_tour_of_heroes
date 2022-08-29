@@ -23,17 +23,23 @@
   </div>
 
   <div class='small-width-container'>
-    <h2>Name</h2>
-    <h4>{{brewery?.name}}</h4>
-    <div class='separator'></div>
-    <h2>Postal Code</h2>
-    <h4>{{brewery?.postal_code}}</h4>
-    <div class='separator'></div>
-    <h2>Phone</h2>
-    <h4>{{brewery?.phone}}</h4>
-    <div class='separator'></div>
-    <h2>Created at</h2>
-    <h4>HUN: {{brewery?.created_at | date:'yyyy/MM/dd'}}</h4>
-    <h4>USA: {{brewery?.created_at | date:'MM/dd/yyyy'}}</h4>
+    <div class='details-holder'>
+      <h2>Name</h2>
+      <h4>{{brewery?.name}}</h4>
+    </div>
+    <div class='details-holder'>
+      <h2>Postal Code</h2>
+      <h4>{{brewery?.postal_code}}</h4>
+    </div>
+    <div class='details-holder'>
+      <h2>Phone</h2>
+      <h4>{{brewery?.phone}}</h4>
+    </div>
+    <div class='details-holder'>
+      <h2>Created at</h2>
+      <h4>HUN: {{brewery?.created_at | date:'yyyy/MM/dd'}}</h4>
+      <h4>USA: {{brewery?.created_at | date:'MM/dd/yyyy'}}</h4>
+    </div>
+
   </div>
 </div>

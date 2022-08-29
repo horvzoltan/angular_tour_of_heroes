@@ -8,10 +8,14 @@ section {
 header {
   min-height: 120px;
   font-size: 23px;
+
 }
 
 header h1 {
+  border-radius: 6px;
   padding: 10px;
+  background-color: rgb(207,0,80,0.5);
+  font-weight: 350;
 }
 
 ul {
@@ -25,7 +29,7 @@ ul {
   background-position: center;
   background-size: 70%;
   width: 100%;
-  background-color: rgba(22,47,74,0.25);
+  background-color: rgba(22, 47, 74, 0.25);
 }
 
 .mid {
@@ -39,7 +43,6 @@ ul {
 }
 
 .list {
-  background-color: rgba(255,255,255, .75);
   padding: 10px;
   border-radius: 10px;
   min-width: 250px;
@@ -51,15 +54,30 @@ ul {
   padding: 2px;
 }
 
-#name-list:hover {
-  background-color: #c3d9ed;
+.beer-container {
+  color: white;
+  background-color: rgba(22, 47, 74, 0.4);
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  border-radius: 10px;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.beer-container:hover {
+  background-color: rgb(232, 172, 0);
 }
 
 .selected {
-  background-color: rgba(22,47,74,0.8);
   color: white;
   text-decoration: underline;
-  border-radius: 3px;
+  background-color: rgb(207, 0, 80, 0.6);
+}
+
+.beer-icon {
+  height: 40px;
+  margin-right: 5px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -73,12 +91,14 @@ ul {
   .mid {
     width: 97%;
   }
-  .head h1{
+
+  .head h1 {
     font-size: 1.2em;
   }
 
   .list {
     padding: 3px;
+    padding-top: 0;
     border-radius: 8px;
     font-size: 18px;
     min-width: auto;
