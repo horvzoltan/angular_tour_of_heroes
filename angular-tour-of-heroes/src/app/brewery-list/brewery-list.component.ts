@@ -5,7 +5,7 @@ import {Brewery} from '../../shared/interfaces/brewery';
 @Component({
   selector: 'app-brewery-list',
   templateUrl: './brewery-list.component.html',
-  styleUrls: ['./brewery-list.component.css']
+  styleUrls: ['./brewery-list.component.scss']
 })
 export class BreweryListComponent implements OnInit {
   brews: Brewery[] = [];
