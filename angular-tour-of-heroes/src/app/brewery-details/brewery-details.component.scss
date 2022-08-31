@@ -1,85 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100&display=swap');
 
-.small-width-container {
-  padding: 5px;
-  display: none;
-}
-.tablecon {
+.table-container {
   margin-top: 25px;
-  border-radius: 10px;
+  border-radius: 6px;
   color: white;
-  margin-left: 10px;
 }
 .content-container {
   display: flex;
-}
-th {
-  font-size: 15px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  color: black;
-  background-color: white;
-  width: 100%;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-}
-.property-container {
-  display: flex;
-  min-width: 160px;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 5px;
-  border-radius: 6px;
-  background-color: rgba(22, 47, 74, 0.3);
-  margin-right: 3px;
-  span {
-    height: 100%;
-    width: 100%;
-    background-color: rgba(255, 192, 17, 0.75);
-    font-size: 14px;
-    text-align: center;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  .content-container {
-    display: block;
-  }
-  .tablecon {
-    display: block;
-    padding: 10px;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .content-container {
-    display: block;
-  }
-  .tablecon {
-    margin: 0;
-  }
-  th {
-    font-size: 15px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    color: black;
-    background-color: white;
-    width: 100%;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-  }
   .property-container {
     display: flex;
+    min-width: 160px;
     flex-direction: column;
     align-items: center;
     margin-bottom: 5px;
     border-radius: 6px;
     background-color: rgba(22, 47, 74, 0.3);
-    span {
+    margin-right: 3px;
+    th {
+      font-size: 15px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      color: black;
+      background-color: white;
       width: 100%;
-      background-color: rgba(255, 192, 17, 0.85);
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+    span {
+      height: 100%;
+      width: 100%;
+      background-color: rgba(255, 192, 17, 0.75);
       font-size: 14px;
       text-align: center;
       border-bottom-left-radius: 6px;
@@ -87,6 +37,15 @@ th {
       padding-top: 10px;
       padding-bottom: 10px;
     }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .table-container {
+    padding: 10px;
+  }
+  .content-container {
+    display: block;
   }
 }
 
