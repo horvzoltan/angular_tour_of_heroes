@@ -7,14 +7,11 @@ section {
 header {
   min-height: 120px;
   font-size: 23px;
-
   h1 {
     padding: 10px;
-    background-color: rgb(207, 0, 80, 0.6);
     border-radius: 6px;
-    font-weight: 350;
+    font-weight: 500;
   }
-
 }
 ul {
   padding: 0;
@@ -23,11 +20,10 @@ ul {
   color: white;
   display: flex;
   justify-content: center;
-  background-size: 70%;
   width: 100%;
-  background: linear-gradient(-45deg, rgba(238, 119, 82, 0.30), rgba(231, 60, 126, 0.3), rgba(35, 166, 213, 0.3), rgba(35, 213, 171, 0.3));
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: rgba(255, 192, 17, 0.75);
 }
 .mid {
   display: flex;
@@ -92,17 +88,5 @@ ul {
     border-radius: 8px;
     font-size: 18px;
     min-width: auto;
-  }
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
   }
 }
