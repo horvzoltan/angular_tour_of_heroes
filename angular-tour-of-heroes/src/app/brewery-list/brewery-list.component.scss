@@ -3,46 +3,33 @@ section {
   margin-right: auto;
   margin-left: auto;
   width: 80%;
-}
-header {
-  min-height: 120px;
-  font-size: 23px;
-  h1 {
-    padding: 10px;
-    border-radius: 6px;
-    font-weight: 500;
+
+  header {
+    text-align: center;
+    color: white;
   }
 }
-ul {
-  padding: 0;
-}
-.container.head {
-  color: white;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  background-color: rgba(255, 192, 17, 0.75);
-}
+
 .mid {
   display: flex;
   margin-top: 6px;
+
+  .list {
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 250px;
+
+    ul {
+      padding: 0;
+
+      .brews {
+        list-style-type: none;
+        margin: 3px;
+      }
+    }
+  }
 }
-.brews {
-  list-style-type: none;
-  margin: 3px;
-}
-.list {
-  padding: 10px;
-  border-radius: 10px;
-  min-width: 250px;
-}
-#name-list {
-  cursor: pointer;
-  border-radius: 2px;
-  padding: 2px;
-}
+
 .beer-container {
   color: white;
   background-color: rgba(22, 47, 74, 0.4);
@@ -52,41 +39,49 @@ ul {
   border-radius: 10px;
   transition: background-color 0.2s ease-in-out;
   cursor: pointer;
+
   &:not(.selected) {
     &:hover {
       background-color: rgb(232, 172, 0);
     }
   }
+
+  #name-list {
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 2px;
+  }
+
+  .beer-icon {
+    height: 40px;
+    margin-right: 5px;
+  }
 }
+
 .selected {
   color: white;
   text-decoration: underline;
   background-color: rgb(207, 0, 80, 0.6);
 }
-.beer-icon {
-  height: 40px;
-  margin-right: 5px;
-}
+
 @media only screen and (max-width: 1200px) {
   .mid {
     flex-direction: column;
     width: 60%;
   }
 }
+
 @media only screen and (max-width: 500px) {
   .mid {
     width: 97%;
-  }
-  .head {
-    h1 {
-      font-size: 1.2em;
+
+    .list {
+      padding: 3px;
+      padding-top: 0;
+      border-radius: 8px;
+      font-size: 18px;
+      min-width: auto;
     }
   }
-  .list {
-    padding: 3px;
-    padding-top: 0;
-    border-radius: 8px;
-    font-size: 18px;
-    min-width: auto;
-  }
+
 }
