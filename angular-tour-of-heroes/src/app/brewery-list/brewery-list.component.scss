@@ -13,15 +13,18 @@ section {
   }
 }
 
+.top {
+  flex-direction: column;
+  align-items: center;
+}
+
 .mid {
   display: flex;
   margin-top: 6px;
-
   .list {
     padding: 10px;
     border-radius: 10px;
     min-width: 250px;
-
     ul {
       padding: 0;
 
