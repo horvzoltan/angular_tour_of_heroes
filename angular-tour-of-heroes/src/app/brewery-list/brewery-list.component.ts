@@ -25,6 +25,7 @@ export class BreweryListComponent implements OnInit {
         this.currentBrewery = this.brews[0];
       });
   }
+
   selectBrewery(brews: Brewery){
     this.currentBrewery = brews;
   }

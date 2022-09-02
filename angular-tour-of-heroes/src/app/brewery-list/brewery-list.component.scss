@@ -3,10 +3,13 @@ section {
   margin-right: auto;
   margin-left: auto;
   width: 80%;
-
+  display: flex;
+  justify-content: center;
   header {
-    text-align: center;
+    min-height: 150px;
     color: white;
+    max-width: 150px;
+    text-align: center;
   }
 }
 

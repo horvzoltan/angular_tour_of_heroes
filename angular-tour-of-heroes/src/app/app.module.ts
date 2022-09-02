@@ -14,6 +14,7 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { BreweryListComponent } from './brewery-list/brewery-list.component';
 import { BreweryDetailsComponent } from './brewery-details/brewery-details.component';
 import { FooterComponent } from './footer/footer.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FooterComponent } from './footer/footer.component';
     HeroSearchComponent,
     BreweryListComponent,
     BreweryDetailsComponent,
-    FooterComponent
+    FooterComponent,
+    SideNavComponent
   ],
     imports: [
         BrowserModule,
