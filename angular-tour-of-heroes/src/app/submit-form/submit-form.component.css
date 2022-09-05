@@ -1,0 +1,65 @@
+header {
+  font-size: 36px;
+  color: white;
+  text-align: center;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 140px;
+  margin-bottom: 30px;
+}
+form {
+  display: flex;
+  font-size: 20px;
+  background-color: rgba(22, 47, 74, 0.4);
+  padding: 6px;
+  border-radius: 6px;
+  color: white;
+}
+.label-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5px;
+}
+input[aria-selected]{
+  border:none;
+}
+input{
+  font-size: 20px;
+  border:none;
+  border-radius: 3px;
+}
+input[required] {
+  background-image: url('src/assets/star.png');
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: 14px;
+}
+
+button {
+  color: white;
+  background-color: rgba(255, 192, 17, 0.75);
+  border-radius: 6px;
+  border: 1px solid;
+  cursor: pointer;
+  margin-top: 10px;
+  min-height: 26px;
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 1200px) {
+  form {
+    flex-direction: column;
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  form {
+    width: 96%;
+  }
+  input[required] {
+    background-size: 11px;
+  }
+}
+

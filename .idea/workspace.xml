@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f2cb659-bcec-4ec9-99e4-9128a135c3aa" name="Changes" comment="feature: New changes">
-      <change afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/assets/hamburger.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/assets/medical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/assets/star.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-list/brewery-list.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-list/brewery-list.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-list/brewery-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-list/brewery-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/side-nav/side-nav.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/side-nav/side-nav.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/side-nav/side-nav.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/side-nav/side-nav.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/side-nav/side-nav.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/side-nav/side-nav.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/submit-form/submit-form.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/submit-form/submit-form.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/submit-form/submit-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/submit-form/submit-form.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/submit-form/submit-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/submit-form/submit-form.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +30,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2DU3Rhiz7r8IHPgIhNN7OAqXVU4" />
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,7 +45,7 @@
     "last_opened_file_path": "C:/Users/ZOhorvath/Documents/GitHub/angular_tour_of_heroes/angular-tour-of-heroes/src/assets",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Users/horvathzoltan/Documents/GitHub/angular_tour_of_heroes/angular-tour-of-heroes/node_modules/typescript/lib",
+    "ts.external.directory.path": "C:\\Users\\ZOhorvath\\Documents\\GitHub\\angular_tour_of_heroes\\angular-tour-of-heroes\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -47,9 +54,9 @@
       <recent name="C:\Users\ZOhorvath\Documents\GitHub\angular_tour_of_heroes\angular-tour-of-heroes\src\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ZOhorvath\Documents\GitHub\angular_tour_of_heroes\angular-tour-of-heroes\src\assets" />
       <recent name="$PROJECT_DIR$/angular-tour-of-heroes/src/assets" />
       <recent name="$PROJECT_DIR$/angular-tour-of-heroes/src" />
-      <recent name="C:\Users\ZOhorvath\Documents\GitHub\angular_tour_of_heroes\angular-tour-of-heroes\src\assets" />
       <recent name="C:\Users\ZOhorvath\Documents\GitHub\angular_tour_of_heroes\angular-tour-of-heroes\src\shared" />
       <recent name="C:\Users\ZOhorvath\Documents\GitHub\angular_tour_of_heroes\angular-tour-of-heroes\src\shared\interfaces" />
     </key>
@@ -81,6 +88,7 @@
       <workItem from="1661947034721" duration="1306000" />
       <workItem from="1661951439280" duration="3137000" />
       <workItem from="1662033597912" duration="2604000" />
+      <workItem from="1662364487954" duration="12574000" />
     </task>
     <task id="LOCAL-00001" summary="feature: finished services">
       <created>1660815287188</created>

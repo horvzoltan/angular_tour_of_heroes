@@ -1,1 +1,41 @@
-<p>submit-form works!</p>
+<header>
+  Add new Brewery
+</header>
+<div class='form-container'>
+  <form [formGroup]='newBrewery' (ngSubmit)='onSubmit()'>
+    <div class='label-container'>
+      <label for='name'>Name</label>
+      <input id='name' type='text' formControlName='name' required>
+      <label for='type'>Type</label>
+      <input id='type' type='text' formControlName='brewery_type' required>
+      <label for='street'>Street</label>
+      <input id='street' type='text' formControlName='street' required>
+      <label for='address-2'>Address 2</label>
+      <input id='address-2' type='text' formControlName='address_2'>
+      <label for='address-3'>Address 3</label>
+      <input id='address-3' type='text' formControlName='address_3'>
+      <label for='city'>City</label>
+      <input id='city' type='text' formControlName='city' required>
+      <label for='state'>State</label>
+      <input id='state' type='text' formControlName='state' required>
+    </div>
+    <div class='label-container'>
+      <label for='county-province'>County Province</label>
+      <input id='county-province' type='text' formControlName='county_province'>
+      <label for='postal-code'>Postal Code</label>
+      <input id='postal-code' type='text' formControlName='postal_code' required>
+      <label for='country'>Country</label>
+      <input id='country' type='text' formControlName='country' required>
+      <label for='longitude'>Longitude</label>
+      <input id='longitude' type='text' formControlName='longitude' required>
+      <label for='latitude'>Latitude</label>
+      <input id='latitude' type='text' formControlName='latitude' required>
+      <label for='phone'>Phone</label>
+      <input id='phone' type='text' formControlName='phone' required>
+      <label for='website-url'>Website Url</label>
+      <input id='website-url' type='text' formControlName='website_url' required>
+    </div>
+
+    <button type='submit' [disabled]='!newBrewery.valid'>Submit</button>
+  </form>
+</div>

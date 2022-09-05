@@ -1,5 +1,11 @@
-h1 {
-  margin-bottom: 0;
+.app {
+  min-height: 850px;
+}
+
+.nav-pos {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1050px;
 }
 
 nav a {
@@ -21,5 +27,16 @@ nav a:active {
   background-color: black;
 }
 
+@media only screen and (max-width: 1200px) {
+  .nav-pos {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .nav-pos {
+    width: 97%;
+  }
+}
 
 
