@@ -1,12 +1,15 @@
-header {
-  font-size: 36px;
-  color: white;
-  text-align: center;
+section {
+  margin-bottom: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
 }
+
 .form-container {
   display: flex;
   justify-content: center;
-  margin-top: 140px;
   margin-bottom: 30px;
 }
 form {
@@ -47,6 +50,8 @@ button {
   min-height: 26px;
   font-size: 22px;
 }
+
+
 
 @media only screen and (max-width: 1200px) {
   form {

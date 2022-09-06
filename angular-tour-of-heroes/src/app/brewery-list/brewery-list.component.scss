@@ -5,22 +5,10 @@ section {
   width: 80%;
   display: flex;
   justify-content: center;
-  header {
-    min-height: 150px;
-    color: white;
-    max-width: 150px;
-    text-align: center;
-  }
-}
-
-.top {
-  flex-direction: column;
-  align-items: center;
 }
 
 .mid {
   display: flex;
-  margin-top: 6px;
   .list {
     padding: 10px;
     border-radius: 10px;
@@ -89,5 +77,4 @@ section {
       min-width: auto;
     }
   }
-
 }

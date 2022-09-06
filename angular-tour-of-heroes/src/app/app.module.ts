@@ -16,6 +16,7 @@ import { BreweryDetailsComponent } from './brewery-details/brewery-details.compo
 import { FooterComponent } from './footer/footer.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { SubmitFormComponent } from './submit-form/submit-form.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { SubmitFormComponent } from './submit-form/submit-form.component';
     BreweryDetailsComponent,
     FooterComponent,
     SideNavComponent,
-    SubmitFormComponent
+    SubmitFormComponent,
+    HeaderComponent
   ],
     imports: [
         BrowserModule,
