@@ -7,6 +7,7 @@ import {FormBuilder, Validators, FormArray} from '@angular/forms';
   styleUrls: ['./submit-form.component.css']
 })
 export class SubmitFormComponent implements OnInit {
+  loading: boolean = false;
   newBrewery = this.fb.group({
     name: ['', Validators.required],
     brewery_type: ['', Validators.required],
@@ -31,6 +32,10 @@ export class SubmitFormComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.newBrewery.value);
+    this.loading = true;
+    setTimeout(()=>{
+      console.log(this.newBrewery.value);
+      this.loading = false;
+    },1000);
   }
 }

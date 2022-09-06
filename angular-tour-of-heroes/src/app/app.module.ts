@@ -17,6 +17,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { SubmitFormComponent } from './submit-form/submit-form.component';
 import { HeaderComponent } from './header/header.component';
+import { SpinnerComponent } from './spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { HeaderComponent } from './header/header.component';
     FooterComponent,
     SideNavComponent,
     SubmitFormComponent,
-    HeaderComponent
+    HeaderComponent,
+    SpinnerComponent
   ],
     imports: [
         BrowserModule,

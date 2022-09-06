@@ -3,6 +3,9 @@
     <span [hidden]='!currentBrewery'>{{currentBrewery?.name}}</span>
   </h1>
 </section>
+<section class='spinner'>
+  <app-spinner *ngIf='loading'></app-spinner>
+</section>
 <section class='mid'>
   <div class='list'>
     <ul>

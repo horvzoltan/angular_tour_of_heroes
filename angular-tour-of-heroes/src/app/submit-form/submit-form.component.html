@@ -1,8 +1,10 @@
 <section>
   <h1>Add new Brewery</h1>
 </section>
+
 <div class='form-container'>
-  <form [formGroup]='newBrewery' (ngSubmit)='onSubmit()'>
+  <app-spinner *ngIf='loading'></app-spinner>
+  <form *ngIf='!loading' [formGroup]='newBrewery' (ngSubmit)='onSubmit()'>
     <div class='label-container'>
       <label for='name'>Name</label>
       <input id='name' type='text' formControlName='name' required>
@@ -35,7 +37,6 @@
       <label for='website-url'>Website Url</label>
       <input id='website-url' type='text' formControlName='website_url' required>
     </div>
-
     <button type='submit' [disabled]='!newBrewery.valid'>Submit</button>
   </form>
 </div>
