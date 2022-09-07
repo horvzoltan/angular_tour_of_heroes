@@ -33,7 +33,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
     SideNavComponent,
     SubmitFormComponent,
     HeaderComponent,
-    SpinnerComponent
+    SpinnerComponent,
   ],
     imports: [
         BrowserModule,

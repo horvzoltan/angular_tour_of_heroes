@@ -4,7 +4,7 @@ import {FormBuilder, Validators, FormArray} from '@angular/forms';
 @Component({
   selector: 'app-submit-form',
   templateUrl: './submit-form.component.html',
-  styleUrls: ['./submit-form.component.css']
+  styleUrls: ['./submit-form.component.scss']
 })
 export class SubmitFormComponent implements OnInit {
   loading: boolean = false;
@@ -32,6 +32,7 @@ export class SubmitFormComponent implements OnInit {
   }
 
   onSubmit() {
+    // Just for testing
     this.loading = true;
     setTimeout(()=>{
       console.log(this.newBrewery.value);

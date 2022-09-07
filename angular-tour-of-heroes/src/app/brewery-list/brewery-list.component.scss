@@ -5,61 +5,67 @@ section {
   width: 80%;
   display: flex;
   justify-content: center;
-  h1{
+
+  h1 {
     color: white;
   }
 }
 
 .mid {
   display: flex;
+  .table {
+    margin-top: 27px;
+  }
   .list {
     padding: 10px;
     border-radius: 10px;
     min-width: 250px;
+
     ul {
       padding: 0;
 
       .brews {
         list-style-type: none;
         margin: 3px;
+
+        .beer-container {
+          color: white;
+          background-color: rgba(22, 47, 74, 0.4);
+          display: flex;
+          align-items: center;
+          padding: 4px;
+          border-radius: 10px;
+          transition: background-color 0.2s ease-in-out;
+          cursor: pointer;
+
+          &:not(.selected) {
+            &:hover {
+              background-color: rgb(232, 172, 0);
+            }
+          }
+
+          #name-list {
+            cursor: pointer;
+            border-radius: 2px;
+            padding: 2px;
+          }
+
+          .beer-icon {
+            height: 40px;
+            margin-right: 5px;
+          }
+        }
+
+        .selected {
+          color: white;
+          text-decoration: underline;
+          background-color: rgb(207, 0, 80, 0.6);
+        }
       }
     }
   }
 }
 
-.beer-container {
-  color: white;
-  background-color: rgba(22, 47, 74, 0.4);
-  display: flex;
-  align-items: center;
-  padding: 4px;
-  border-radius: 10px;
-  transition: background-color 0.2s ease-in-out;
-  cursor: pointer;
-
-  &:not(.selected) {
-    &:hover {
-      background-color: rgb(232, 172, 0);
-    }
-  }
-
-  #name-list {
-    cursor: pointer;
-    border-radius: 2px;
-    padding: 2px;
-  }
-
-  .beer-icon {
-    height: 40px;
-    margin-right: 5px;
-  }
-}
-
-.selected {
-  color: white;
-  text-decoration: underline;
-  background-color: rgb(207, 0, 80, 0.6);
-}
 
 @media only screen and (max-width: 1200px) {
   .mid {

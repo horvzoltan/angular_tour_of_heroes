@@ -1,8 +1,7 @@
 <section>
   <h1>Add new Brewery</h1>
 </section>
-
-<div class='form-container'>
+<section class="mid">
   <app-spinner *ngIf='loading'></app-spinner>
   <form *ngIf='!loading' [formGroup]='newBrewery' (ngSubmit)='onSubmit()'>
     <div class='label-container'>
@@ -39,4 +38,4 @@
     </div>
     <button type='submit' [disabled]='!newBrewery.valid'>Submit</button>
   </form>
-</div>
+</section>
