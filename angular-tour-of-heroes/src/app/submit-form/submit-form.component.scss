@@ -30,6 +30,7 @@ section {
         border-radius: 3px;
       }
       input[required] {
+        // angular wants the url like this.
         background-image: url('/assets/star.png');
         background-repeat: no-repeat;
         background-position-x: right;

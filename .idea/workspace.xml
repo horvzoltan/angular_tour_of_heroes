@@ -3,18 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="6f2cb659-bcec-4ec9-99e4-9128a135c3aa" name="Changes" comment="feature: New changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-details/brewery-details.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-details/brewery-details.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-list/brewery-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-list/brewery-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-list/brewery-list.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/brewery-list/brewery-list.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/footer/footer.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/footer/footer.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/side-nav/side-nav.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/side-nav/side-nav.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/submit-form/submit-form.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/submit-form/submit-form.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/submit-form/submit-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/submit-form/submit-form.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/submit-form/submit-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/submit-form/submit-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/submit-form/submit-form.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/submit-form/submit-form.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/assets/medical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/assets/pexels-amanda-klamrowski-1400255.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/assets/pexels-isabella-mendes-338711.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/assets/pexels-pixabay-159291.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/assets/pexels-tembela-bohle-1089932.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/assets/rsz_3pexels-engin-akyurt-1672304.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/assets/rsz_4pexels-engin-akyurt-1672304.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/assets/toast.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662455773447</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="feature: New changes">
+      <created>1662542906984</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1662542906985</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
