@@ -1,25 +1,8 @@
 .app {
   position: relative;
   min-height: 100vh;
-
-  .nav-mobile {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1050px;
-  }
 }
 
 
-@media only screen and (max-width: 1200px) {
-  .nav-mobile {
-    width: 60%;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .nav-mobile {
-    width: 97%;
-  }
-}
 
 

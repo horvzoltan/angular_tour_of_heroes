@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {FormBuilder, Validators, FormArray} from '@angular/forms';
+import {FormBuilder, Validators, FormControl} from '@angular/forms';
 
 @Component({
   selector: 'app-submit-form',
@@ -9,20 +9,20 @@ import {FormBuilder, Validators, FormArray} from '@angular/forms';
 export class SubmitFormComponent implements OnInit {
   loading: boolean = false;
   newBrewery = this.fb.group({
-    name: ['', Validators.required],
-    brewery_type: ['', Validators.required],
-    street: ['', Validators.required],
+    name: new FormControl('', [Validators.required]),
+    brewery_type: new FormControl('', [Validators.required]),
+    street: new FormControl('', [Validators.required]),
     address_2: [''],
     address_3: [''],
-    city: ['', Validators.required],
-    state: ['', Validators.required],
+    city: new FormControl('', [Validators.required]),
+    state: new FormControl('', [Validators.required]),
     county_province: [''],
-    postal_code: ['', Validators.required],
-    country: ['', Validators.required],
-    longitude: ['', Validators.required],
-    latitude: ['', Validators.required],
-    phone: ['', Validators.required],
-    website_url: ['',[Validators.required, Validators.pattern('(https?://)?([\\da-z.-]+)\\.([a-z.]{2,6})[/\\w .-]*/?')]],
+    postal_code: new FormControl('', [Validators.required]),
+    country: new FormControl('', [Validators.required]),
+    longitude: new FormControl('', [Validators.required]),
+    latitude: new FormControl('', [Validators.required]),
+    phone: new FormControl('', [Validators.required]),
+    website_url: new FormControl('', [Validators.required, Validators.pattern('(https?://)?([\\da-z.-]+)\\.([a-z.]{2,6})[/\\w .-]*/?')]),
   });
 
   constructor(private fb: FormBuilder) {
@@ -34,9 +34,54 @@ export class SubmitFormComponent implements OnInit {
   onSubmit() {
     // Just for testing
     this.loading = true;
-    setTimeout(()=>{
+    setTimeout(() => {
       console.log(this.newBrewery.value);
       this.loading = false;
-    },1000);
+    }, 1000);
   }
+
+  get name() {
+    return this.newBrewery.get('name');
+  }
+
+  get breweryType() {
+    return this.newBrewery.get('brewery_type');
+  }
+
+  get street() {
+    return this.newBrewery.get('street');
+  }
+
+  get city() {
+    return this.newBrewery.get('city');
+  }
+
+  get state() {
+    return this.newBrewery.get('state');
+  }
+
+  get postalCode() {
+    return this.newBrewery.get('postal_code');
+  }
+
+  get country() {
+    return this.newBrewery.get('country');
+  }
+
+  get longitude() {
+    return this.newBrewery.get('longitude');
+  }
+
+  get latitude() {
+    return this.newBrewery.get('latitude');
+  }
+
+  get phone() {
+    return this.newBrewery.get('phone');
+  }
+
+  get websiteUrl() {
+    return this.newBrewery.get('website_url');
+  }
+
 }
