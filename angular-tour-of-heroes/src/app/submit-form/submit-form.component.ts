@@ -23,6 +23,7 @@ export class SubmitFormComponent implements OnInit {
     latitude: new FormControl('', [Validators.required]),
     phone: new FormControl('', [Validators.required]),
     website_url: new FormControl('', [Validators.required, Validators.pattern('(https?://)?([\\da-z.-]+)\\.([a-z.]{2,6})[/\\w .-]*/?')]),
+    email: new FormControl('', [Validators.required, Validators.email]),
   });
 
   constructor(private fb: FormBuilder) {
@@ -82,6 +83,10 @@ export class SubmitFormComponent implements OnInit {
 
   get websiteUrl() {
     return this.newBrewery.get('website_url');
+  }
+
+  get email() {
+    return this.newBrewery.get('email');
   }
 
 }

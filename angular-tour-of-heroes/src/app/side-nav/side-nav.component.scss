@@ -1,7 +1,7 @@
 .sidenav {
   height: 100%;
   width: 0;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
@@ -39,10 +39,8 @@
 }
 
 #open-button {
-  position: fixed;
-  top: 40px;
+  position: relative;
   cursor: pointer;
-
   img {
     height: 60px;
   }

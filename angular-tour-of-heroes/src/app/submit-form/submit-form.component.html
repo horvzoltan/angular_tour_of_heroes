@@ -88,9 +88,17 @@
       <div class='error-container'
            *ngIf='websiteUrl?.invalid && (websiteUrl?.dirty || websiteUrl?.touched) || websiteUrl?.untouched'>
         <div *ngIf='websiteUrl?.errors?.["required"]'>Url is required.</div>
-        <div *ngIf='websiteUrl?.errors?.[""]'>Url is invalid.</div>
+        <div *ngIf='websiteUrl?.errors'>Url is invalid.</div>
+      </div>
+      <!-- Email -->
+      <label for='email'>Email</label>
+      <input id='email' type='text' formControlName='email' required>
+      <div class='error-container'
+           *ngIf='email?.invalid && (email?.dirty || email?.touched) || email?.untouched'>
+        <div *ngIf='email?.errors?.["required"]'>Email is required.</div>
+        <div *ngIf='email?.errors'>Email is invalid.</div>
       </div>
     </div>
-    <button type='submit' [disabled]='!newBrewery.valid'>Submit</button>
+    <button class='submit-button' type='submit' [disabled]='!newBrewery.valid'>Submit</button>
   </form>
 </section>
