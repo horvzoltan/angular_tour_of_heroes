@@ -10,9 +10,11 @@ section {
   justify-content: center;
   color: white;
 }
+
 .mid {
   position: relative;
   margin-bottom: 50px;
+
   form {
     display: flex;
     flex-direction: column;
@@ -22,6 +24,7 @@ section {
     border-radius: 6px;
     color: white;
     min-width: 40%;
+
     .submit-button {
       color: white;
       background-color: $base-yellow-75;
@@ -32,17 +35,21 @@ section {
       height: 35px;
       font-size: 22px;
     }
+
     .submit-button:disabled {
       background-color: grey;
       color: lightgrey;
     }
+
     .label-container {
       display: flex;
       flex-direction: column;
       margin-right: 5px;
-      input[aria-selected]{
-        border:none;
+
+      input[aria-selected] {
+        border: none;
       }
+
       label {
         color: rgba(0, 0, 0, 0.67);
         font-size: 16px;
@@ -51,20 +58,23 @@ section {
         margin-top: 2px;
         padding-left: 2px;
       }
-      input{
+
+      input {
         color: black;
         font-size: 15px;
-        border:none;
+        border: none;
         border-bottom: 1px solid white;
         background-color: transparent;
         padding-left: 5px;
       }
+
       input:focus {
         outline: none;
       }
+
       .error-container {
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         position: relative;
         bottom: 15px;
         color: red;
@@ -76,14 +86,12 @@ section {
   }
 }
 
-
-
-
 @media only screen and (max-width: 1200px) {
   form {
     width: 60%;
   }
 }
+
 @media only screen and (max-width: 500px) {
   form {
     width: 96%;
