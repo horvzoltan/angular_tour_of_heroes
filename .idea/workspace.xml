@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6f2cb659-bcec-4ec9-99e4-9128a135c3aa" name="Changes" comment="feature: New changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/header/header.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/header/header.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/side-nav/side-nav.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/side-nav/side-nav.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/submit-form/submit-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/submit-form/submit-form.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/submit-form/submit-form.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/submit-form/submit-form.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/submit-form/submit-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/src/app/submit-form/submit-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-tour-of-heroes/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular-tour-of-heroes/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,11 +45,11 @@
       <recent name="C:\Users\ZOhorvath\Documents\GitHub\angular_tour_of_heroes\angular-tour-of-heroes\src\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ZOhorvath\Documents\GitHub\angular_tour_of_heroes\angular-tour-of-heroes\src\shared\interceptors" />
+      <recent name="C:\Users\ZOhorvath\Documents\GitHub\angular_tour_of_heroes\angular-tour-of-heroes\src\shared\services" />
       <recent name="C:\Users\ZOhorvath\Documents\GitHub\angular_tour_of_heroes\angular-tour-of-heroes\src\assets" />
       <recent name="$PROJECT_DIR$/angular-tour-of-heroes/src/assets" />
       <recent name="$PROJECT_DIR$/angular-tour-of-heroes/src" />
-      <recent name="C:\Users\ZOhorvath\Documents\GitHub\angular_tour_of_heroes\angular-tour-of-heroes\src\shared" />
-      <recent name="C:\Users\ZOhorvath\Documents\GitHub\angular_tour_of_heroes\angular-tour-of-heroes\src\shared\interfaces" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -84,7 +81,8 @@
       <workItem from="1662033597912" duration="2604000" />
       <workItem from="1662364487954" duration="13961000" />
       <workItem from="1662447604733" duration="10048000" />
-      <workItem from="1662968550064" duration="12388000" />
+      <workItem from="1662968550064" duration="17667000" />
+      <workItem from="1663052878469" duration="13904000" />
     </task>
     <task id="LOCAL-00001" summary="feature: finished services">
       <created>1660815287188</created>
@@ -233,7 +231,56 @@
       <option name="project" value="LOCAL" />
       <updated>1662974987242</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="feature: New changes">
+      <created>1662983254598</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1662983254598</updated>
+    </task>
+    <task id="LOCAL-00023" summary="feature: New changes">
+      <created>1662986392928</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1662986392928</updated>
+    </task>
+    <task id="LOCAL-00024" summary="feature: New changes">
+      <created>1663052980116</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1663052980116</updated>
+    </task>
+    <task id="LOCAL-00025" summary="feature: New changes">
+      <created>1663057949119</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1663057949119</updated>
+    </task>
+    <task id="LOCAL-00026" summary="feature: New changes">
+      <created>1663058313387</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1663058313387</updated>
+    </task>
+    <task id="LOCAL-00027" summary="feature: New changes">
+      <created>1663065236071</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1663065236071</updated>
+    </task>
+    <task id="LOCAL-00028" summary="feature: New changes">
+      <created>1663070135664</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1663070135664</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

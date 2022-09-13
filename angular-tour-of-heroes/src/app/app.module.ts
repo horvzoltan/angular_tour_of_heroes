@@ -18,6 +18,7 @@ import { SubmitFormComponent } from './submit-form/submit-form.component';
 import { HeaderComponent } from './header/header.component';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { HttpLoadingInterceptor } from 'src/shared/interceptors/http-request-interceptor.interceptor';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { HttpLoadingInterceptor } from 'src/shared/interceptors/http-request-int
         FormsModule,
         AppRoutingModule,
         HttpClientModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        BrowserAnimationsModule
     ],
   providers: [
     {
