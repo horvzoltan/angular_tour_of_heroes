@@ -25,21 +25,25 @@ section {
     color: white;
     min-width: 40%;
 
-    .standard-button {
-      color: white;
-      background-color: $base-yellow-75;
-      border-radius: 6px;
-      border: 1px solid;
-      cursor: pointer;
-      margin-top: 30px;
-      height: 35px;
-      font-size: 22px;
-    }
+    .button-container {
+      display: flex;
+      justify-content: space-around;
+      .standard-button {
+        color: white;
+        background-color: $base-yellow-75;
+        border-radius: 6px;
+        border: 1px solid;
+        cursor: pointer;
+        margin-top: 30px;
+        height: 35px;
+        font-size: 22px;
+      }
 
-    .standard-button:disabled {
-      cursor: auto;
-      background-color: grey;
-      color: lightgrey;
+      .standard-button:disabled {
+        cursor: auto;
+        background-color: grey;
+        color: lightgrey;
+      }
     }
 
     .label-container {
