@@ -30,6 +30,7 @@ export class SubmitFormComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    console.log(this.newBrewery.get('website_url')?.errors);
   }
 
   onSubmit() {

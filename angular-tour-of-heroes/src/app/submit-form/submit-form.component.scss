@@ -37,6 +37,7 @@ section {
     }
 
     .submit-button:disabled {
+      cursor: auto;
       background-color: grey;
       color: lightgrey;
     }
