@@ -7,7 +7,6 @@ import {FormBuilder, Validators, FormControl} from '@angular/forms';
   styleUrls: ['./submit-form.component.scss']
 })
 export class SubmitFormComponent implements OnInit {
-  loading: boolean = false;
   newBrewery = this.fb.group({
     name: new FormControl('', [Validators.required]),
     brewery_type: new FormControl('', [Validators.required]),
@@ -30,16 +29,10 @@ export class SubmitFormComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.newBrewery.get('website_url')?.errors);
   }
 
   onSubmit() {
-    // Just for testing
-    this.loading = true;
-    setTimeout(() => {
       console.log(this.newBrewery.value);
-      this.loading = false;
-    }, 1000);
   }
 
   get name() {
