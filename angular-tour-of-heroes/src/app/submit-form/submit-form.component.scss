@@ -25,7 +25,7 @@ section {
     color: white;
     min-width: 40%;
 
-    .submit-button {
+    .standard-button {
       color: white;
       background-color: $base-yellow-75;
       border-radius: 6px;
@@ -36,7 +36,7 @@ section {
       font-size: 22px;
     }
 
-    .submit-button:disabled {
+    .standard-button:disabled {
       cursor: auto;
       background-color: grey;
       color: lightgrey;

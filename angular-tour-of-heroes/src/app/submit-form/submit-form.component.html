@@ -99,6 +99,10 @@
         <div *ngIf='email?.errors?.["email"]'>Email is invalid.</div>
       </div>
     </div>
-    <button class='submit-button' type='submit' [disabled]='!newBrewery.valid'>Submit</button>
+    <div>
+      <button class='standard-button' type='reset'>Reset</button>
+      <button class='standard-button' type='submit' [disabled]='newBrewery.invalid'>Submit</button>
+    </div>
+
   </form>
 </section>
