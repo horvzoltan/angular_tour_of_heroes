@@ -1,6 +1,8 @@
 <app-header></app-header>
+<div class='spinner' *ngIf='loading.status$ | async'>
+  <app-spinner></app-spinner>
+</div>
 <div class='app'>
-
   <router-outlet></router-outlet>
 </div>
 <app-footer></app-footer>

@@ -37,14 +37,19 @@
 .show {
   width: 40%;
 }
-
-#open-button {
-  position: relative;
-  cursor: pointer;
-  img {
-    height: 60px;
+.open-button-container{
+  display: flex;
+  align-items: center;
+  width: 70%;
+  #open-button {
+    position: relative;
+    cursor: pointer;
+    img {
+      height: 60px;
+    }
   }
 }
+
 
 @media only screen and (max-width: 500px) {
   .show {

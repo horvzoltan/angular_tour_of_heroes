@@ -10,7 +10,6 @@ import {Brewery} from '../../shared/interfaces/brewery';
 export class BreweryListComponent implements OnInit {
   brews: Brewery[] = [];
   currentBrewery?: Brewery;
-  loading: boolean = true;
 
   constructor(private breweryService: BreweryService) {
   }
@@ -22,18 +21,12 @@ export class BreweryListComponent implements OnInit {
   getBrews(): void {
     this.breweryService.getAllBrews().subscribe(
       next => {
-        this.loading = true;
-        // Just for testing
-        setTimeout(() => {
-          console.log('timeout');
-          this.brews = next;
-          this.currentBrewery = this.brews[0];
-          this.loading = false;
-        },1000);
+        this.brews = next;
+        this.currentBrewery = this.brews[0];
       });
   }
 
-  selectBrewery(brews: Brewery){
+  selectBrewery(brews: Brewery) {
     this.currentBrewery = brews;
   }
 }

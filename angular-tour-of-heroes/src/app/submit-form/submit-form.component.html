@@ -2,8 +2,7 @@
   <h1>Add new Brewery</h1>
 </section>
 <section class='mid'>
-  <app-spinner *ngIf='loading'></app-spinner>
-  <form *ngIf='!loading' [formGroup]='newBrewery' (ngSubmit)='onSubmit()'>
+  <form [formGroup]='newBrewery' (ngSubmit)='onSubmit()'>
     <div class='label-container'>
       <!-- Name -->
       <label for='name'>Name</label>

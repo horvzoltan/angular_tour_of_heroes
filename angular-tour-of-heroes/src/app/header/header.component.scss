@@ -1,14 +1,14 @@
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100px;
   color: white;
   background-color: rgba(255, 192, 17, 0.4);
-
-  h1 {
-    margin-top:0;
-    text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  .center {
+    display: flex;
+    justify-content: center;
+    height: 100px;
   }
 }
+
 
