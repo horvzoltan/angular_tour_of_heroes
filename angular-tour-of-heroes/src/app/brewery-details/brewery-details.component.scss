@@ -1,39 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100&display=swap');
 
+$base-yellow-75: rgba(255, 192, 17, 0.75);
+
 .content-container {
+  margin-left: 5px;
   display: flex;
-  color:white;
+  color: white;
+
   .property-container {
     display: flex;
-    min-width: 180px;
+    width: 200px;
     flex-direction: column;
     align-items: center;
     margin-bottom: 5px;
+    margin-right: 5px;
     border-radius: 6px;
-    background-color: rgba(22, 47, 74, 0.3);
-    margin-right: 3px;
 
-    th {
-      font-size: 15px;
-      padding-top: 6px;
-      padding-bottom: 6px;
-      color: black;
-      background-color: white;
+    .mat-card {
+      background-color: transparent;
+      padding: 0;
       width: 100%;
-      border-top-left-radius: 6px;
-      border-top-right-radius: 6px;
+
+      .mat-card-header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-weight: bold;
+        color: black;
+        background-color: white;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+      }
+
+      .mat-card-content {
+        text-align: center;
+        color: white;
+        height: 45px;
+        background-color: $base-yellow-75;
+        padding: 10px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+      }
     }
-
-    span {
-      height: 100%;
-      width: 100%;
-      background-color: rgba(255, 192, 17, 0.75);
-      font-size: 14px;
-      text-align: center;
-      border-bottom-left-radius: 6px;
-      border-bottom-right-radius: 6px;
-      padding-top: 10px;
-      padding-bottom: 10px;
+    .mat-card:not([class*=mat-elevation-z]) {
+      box-shadow: none;
     }
   }
 }
@@ -41,6 +53,10 @@
 @media only screen and (max-width: 1200px) {
   .content-container {
     display: block;
+
+    .property-container {
+      width: auto;
+    }
   }
 }
 

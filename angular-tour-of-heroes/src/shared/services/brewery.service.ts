@@ -23,10 +23,9 @@ export class BreweryService {
   constructor(private http: HttpClient) {
   }
 
-  getAllBrews(): Observable<any> {
-    return this.http.get<any>(this.brewUrl, this.httpOptions)
+  getAllBrews(): Observable<Brewery[]> {
+    return this.http.get<Brewery[]>(this.brewUrl, this.httpOptions)
       .pipe(
-        tap(_ => console.log(`fetched Brews`)),
         catchError(this.handleError<Brewery[]>('getAllBrews', []))
       );
   }

@@ -1,26 +1,46 @@
-<div class='table-container'>
-      <div class='content-container'>
-        <div class='property-container'>
-          <th>Name</th>
-          <span>{{brewery?.name}}</span>
-        </div>
-        <div class='property-container'>
-          <th>Postal Code</th>
-          <span>{{brewery?.postal_code}}</span>
-        </div>
-        <div class='property-container'>
-          <th>Phone</th>
-          <span>{{brewery?.phone}}</span>
-        </div>
-        <div class='property-container'>
-          <th>Created</th>
-          <span>
+<div class='content-container'>
+  <div class='property-container'>
+    <mat-card>
+      <mat-card-header>
+        Name
+      </mat-card-header>
+      <mat-card-content>
+        {{brewery?.name}}
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class='property-container'>
+    <mat-card>
+      <mat-card-header>
+        Postal Code
+      </mat-card-header>
+      <mat-card-content>
+        {{brewery?.postal_code}}
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class='property-container'>
+    <mat-card>
+      <mat-card-header>
+        Phone
+      </mat-card-header>
+      <mat-card-content>
+        {{brewery?.phone}}
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class='property-container'>
+    <mat-card>
+      <mat-card-header>
+        Phone
+      </mat-card-header>
+      <mat-card-content>
             HUN:
             {{brewery?.created_at | date:'yyyy/MM/dd'}}
             <br>
             USA:
             {{brewery?.created_at | date:'MM/dd/yyyy'}}
-          </span>
-        </div>
-    </div>
+      </mat-card-content>
+    </mat-card>
   </div>
+</div>

@@ -7,7 +7,7 @@ import {Brewery} from '../../shared/interfaces/brewery';
   styleUrls: ['./brewery-details.component.scss']
 })
 export class BreweryDetailsComponent implements OnInit {
-  @Input() brewery?: Brewery;
+  @Input() brewery?: Brewery
 
   constructor() {
   }

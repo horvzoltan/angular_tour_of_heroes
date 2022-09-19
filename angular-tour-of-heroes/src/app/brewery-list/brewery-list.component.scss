@@ -1,3 +1,8 @@
+$base-yellow: rgb(255, 192, 17);
+$base-yellow-75: rgba(255, 192, 17, 0.75);
+$pink: rgb(207, 0, 80);
+$pink-selected: rgb(207, 0, 80, 0.6);
+
 section {
   margin-bottom: 15px;
   margin-right: auto;
@@ -12,60 +17,28 @@ section {
 }
 
 .mid {
-  display: flex;
-  .table {
-    margin-top: 27px;
-  }
+  width: 1200px;
   .list {
+    background-color: rgba(128, 128, 128, 0.2);
+    margin-bottom: 40px;
     padding: 10px;
-    border-radius: 10px;
-    min-width: 250px;
-
-    ul {
-      padding: 0;
-
-      .brews {
-        list-style-type: none;
-        margin: 3px;
-
-        .beer-container {
-          color: white;
-          background-color: rgba(22, 47, 74, 0.4);
-          display: flex;
-          align-items: center;
-          padding: 4px;
-          border-radius: 10px;
-          transition: background-color 0.2s ease-in-out;
-          cursor: pointer;
-
-          &:not(.selected) {
-            &:hover {
-              background-color: rgb(232, 172, 0);
-            }
-          }
-
-          #name-list {
-            cursor: pointer;
-            border-radius: 2px;
-            padding: 2px;
-          }
-
-          .beer-icon {
-            height: 40px;
-            margin-right: 5px;
-          }
-        }
-
-        .selected {
-          color: white;
-          text-decoration: underline;
-          background-color: rgb(207, 0, 80, 0.6);
-        }
-      }
-    }
+    border-radius: 6px;
   }
 }
 
+.mat-list-option {
+  border-radius: 6px;
+}
+
+.mat-list-item {
+  color: white;
+  margin-bottom: 4px;
+}
+
+
+.mat-list-single-selected-option, .mat-list-single-selected-option:hover, .mat-list-single-selected-option:focus {
+  background: $pink-selected;
+}
 
 @media only screen and (max-width: 1200px) {
   .mid {
@@ -77,13 +50,5 @@ section {
 @media only screen and (max-width: 500px) {
   .mid {
     width: 97%;
-
-    .list {
-      padding: 3px;
-      padding-top: 0;
-      border-radius: 8px;
-      font-size: 18px;
-      min-width: auto;
-    }
   }
 }
