@@ -1,14 +1,14 @@
 <section class='mid'>
   <div class='list'>
-    <mat-selection-list #brewerys [multiple]='false' dense>
-      <mat-list-option role='listitem' *ngFor='let brewery of brews' [value]='brewery'>
+    <mat-selection-list #selection [multiple]='false' dense>
+      <mat-list-option role='listitem' *ngFor='let brewery of brews;let i = index' [value]='brewery' [selected]='i < 1'>
           <img matListAvatar src='assets/beer.png' alt=''>
           <p matLine >{{brewery.name}}</p>
       </mat-list-option>
     </mat-selection-list>
   </div>
   <div class='table'>
-    <app-brewery-details [brewery]='brewerys.selectedOptions.selected[0]?.value'></app-brewery-details>
+    <app-brewery-details [brewery]='selection.selectedOptions.selected[0]?.value'></app-brewery-details>
   </div>
 </section>
 

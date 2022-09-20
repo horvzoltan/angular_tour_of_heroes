@@ -20,13 +20,14 @@ export class BreweryListComponent implements OnInit {
   }
 
   getBrews(): void {
-    this.breweryService.getAllBrews().pipe(
-      map((breweries) =>
-        breweries.filter((brewery) =>
-          !!brewery.street
+    this.breweryService.getAllBrews()
+      .pipe(
+        map((breweries) =>
+          breweries.filter((brewery) =>
+            !!brewery.street
+          )
         )
-      )
-    ).subscribe(
+      ).subscribe(
       brews => {
         this.brews = brews;
       });
