@@ -1,5 +1,6 @@
-$base-yellow: rgb(255, 192, 17);
+$base-yellow: rgba(255, 192, 17);
 $base-yellow-75: rgba(255, 192, 17, 0.75);
+$base-yellow-95: rgba(255, 192, 17, 0.95);
 $pink: rgb(207, 0, 80);
 $pink-selected: rgb(207, 0, 80, 0.6);
 
@@ -16,7 +17,7 @@ $pink-selected: rgb(207, 0, 80, 0.6);
   align-items: center;
   justify-content: center;
   width: 400px;
-  background: $base-yellow-75;
+  background: $base-yellow-95;
 }
 
 a {
