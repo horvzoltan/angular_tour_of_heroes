@@ -1,0 +1,17 @@
+<mat-sidenav-container class='example-container'>
+  <mat-sidenav
+    #sidenav
+    mode='side'
+    class='example-sidenav'
+    [fixedInViewport]='true'
+  >
+    <a class='closebtn' (click)='sidenav.toggle()'>X</a>
+    <a routerLink='./brewlist' (click)='sidenav.toggle()'>List</a>
+    <a routerLink='./submit' (click)='sidenav.toggle()'>Add</a>
+  </mat-sidenav>
+</mat-sidenav-container>
+<div class='open-button-container'>
+  <button mat-button (click)='sidenav.toggle()'><img src='./assets/hamburger.png' alt=''></button>
+</div>
+
+

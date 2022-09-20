@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100&display=swap');
 
 $base-yellow-75: rgba(255, 192, 17, 0.75);
+$base-yellow: rgba(255, 192, 17);
 
 .content-container {
   margin-left: 5px;
@@ -38,7 +39,7 @@ $base-yellow-75: rgba(255, 192, 17, 0.75);
         text-align: center;
         color: white;
         height: 45px;
-        background-color: $base-yellow-75;
+        background-color: $base-yellow;
         padding: 10px;
         border-bottom-left-radius: 6px;
         border-bottom-right-radius: 6px;
@@ -59,6 +60,3 @@ $base-yellow-75: rgba(255, 192, 17, 0.75);
     }
   }
 }
-
-
-

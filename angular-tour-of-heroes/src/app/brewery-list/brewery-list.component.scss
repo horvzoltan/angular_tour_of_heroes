@@ -2,6 +2,7 @@ $base-yellow: rgb(255, 192, 17);
 $base-yellow-75: rgba(255, 192, 17, 0.75);
 $pink: rgb(207, 0, 80);
 $pink-selected: rgb(207, 0, 80, 0.6);
+$white-7: rgba(255, 255, 255, 0.7);
 
 section {
   margin-bottom: 15px;
@@ -18,26 +19,24 @@ section {
 
 .mid {
   width: 1200px;
+
   .list {
-    background-color: rgba(128, 128, 128, 0.2);
+    background-color: $white-7;
     margin-bottom: 40px;
     padding: 10px;
     border-radius: 6px;
   }
 }
 
-.mat-list-option {
+.mat-list-item {
+  color: black;
+  margin-bottom: 4px;
   border-radius: 6px;
 }
 
-.mat-list-item {
-  color: white;
-  margin-bottom: 4px;
-}
-
-
 .mat-list-single-selected-option, .mat-list-single-selected-option:hover, .mat-list-single-selected-option:focus {
   background: $pink-selected;
+  color: white;
 }
 
 @media only screen and (max-width: 1200px) {

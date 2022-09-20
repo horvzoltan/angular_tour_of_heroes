@@ -8,7 +8,7 @@ import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import {BreweryListComponent} from './brewery-list/brewery-list.component';
 import {BreweryDetailsComponent} from './brewery-details/brewery-details.component';
 import {FooterComponent} from './footer/footer.component';
-import {SideNavComponent} from './side-nav/side-nav.component';
+import {NavigationComponent} from './navigation/navigation.component';
 import {SubmitFormComponent} from './submit-form/submit-form.component';
 import {HeaderComponent} from './header/header.component';
 import {SpinnerComponent} from './spinner/spinner.component';
@@ -22,20 +22,20 @@ import {MaterialModule} from 'src/shared/material.module';
     BreweryListComponent,
     BreweryDetailsComponent,
     FooterComponent,
-    SideNavComponent,
+    NavigationComponent,
     SubmitFormComponent,
     HeaderComponent,
     SpinnerComponent,
   ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    AppRoutingModule,
-    HttpClientModule,
-    ReactiveFormsModule,
-    BrowserAnimationsModule,
-    MaterialModule
-  ],
+	imports: [
+		BrowserModule,
+		FormsModule,
+		AppRoutingModule,
+		HttpClientModule,
+		ReactiveFormsModule,
+		BrowserAnimationsModule,
+		MaterialModule,
+	],
   providers: [
     {
       provide: HTTP_INTERCEPTORS,

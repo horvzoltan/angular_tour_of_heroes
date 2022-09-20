@@ -1,0 +1,71 @@
+$base-yellow: rgb(255, 192, 17);
+$base-yellow-75: rgba(255, 192, 17, 0.75);
+$pink: rgb(207, 0, 80);
+$pink-selected: rgb(207, 0, 80, 0.6);
+
+.example-container {
+  position: absolute;
+  top: 60px;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+}
+
+.example-sidenav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  background: $base-yellow-75;
+}
+
+a {
+  padding: 8px 8px 8px 32px;
+  margin: 20px 20px 20px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: $pink;
+}
+
+.mat-drawer-container {
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.mat-sidenav {
+  pointer-events: all;
+  padding-top: 45px;
+}
+
+.closebtn {
+  position: absolute;
+  cursor: pointer;
+  top: 5px;
+  right: 9px;
+  font-size: 36px;
+}
+
+.open-button-container{
+  display: flex;
+  align-items: center;
+  width: 70%;
+  button {
+    position: relative;
+    cursor: pointer;
+    img {
+      height: 60px;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .example-sidenav {
+    width: 100%;
+  }
+}
