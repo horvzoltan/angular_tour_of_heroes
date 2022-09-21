@@ -32,5 +32,4 @@ export class BreweryListComponent implements OnInit {
         this.brews = brews;
       });
   }
-
 }

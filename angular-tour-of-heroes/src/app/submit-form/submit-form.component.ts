@@ -32,7 +32,14 @@ export class SubmitFormComponent implements OnInit {
   }
 
   onSubmit() {
-      console.log(this.newBrewery.value);
+    console.log(this.newBrewery.value);
+  }
+
+  getErrorMessage(param: string | undefined | null) {
+    if (this.name?.hasError('required')) {
+      return 'You must enter a value';
+    }
+    return '';
   }
 
   get name() {
