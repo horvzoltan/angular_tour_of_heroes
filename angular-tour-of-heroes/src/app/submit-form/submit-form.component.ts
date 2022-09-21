@@ -25,6 +25,8 @@ export class SubmitFormComponent implements OnInit {
     email: new FormControl('', [Validators.required, Validators.email]),
   });
 
+  addressPlaceholder: string = '66 Beacon St. Brooklyn, NY 11238';
+
   constructor(private fb: FormBuilder) {
   }
 
@@ -35,11 +37,15 @@ export class SubmitFormComponent implements OnInit {
     console.log(this.newBrewery.value);
   }
 
-  getErrorMessage(param: string | undefined | null) {
-    if (this.name?.hasError('required')) {
+  getErrorMessage(formControl: FormControl | null) {
+    if (formControl?.hasError('required')) {
       return 'You must enter a value';
+    }else if(formControl?.hasError('email')) {
+      return 'Invalid EMAIL';
+    }else if(formControl?.hasError('pattern')){
+      return 'Invalid URL'
     }
-    return '';
+    return ;
   }
 
   get name() {

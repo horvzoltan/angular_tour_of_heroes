@@ -49,6 +49,9 @@ section {
     .label-container {
       display: flex;
       flex-direction: column;
+      .mat-form-field {
+        margin-bottom: 10px;
+      }
     }
   }
 }
