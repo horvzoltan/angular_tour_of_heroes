@@ -1,13 +1,13 @@
 <section class='mid'>
   <div class='list'>
     <mat-selection-list [multiple]='false' [(ngModel)]="selectedOptions" (ngModelChange)="onNgModelChange($event)" dense>
-      <mat-list-option role='listitem' *ngFor='let brewery of brews' [value]='brewery' [selected]='brewery == selected'>
-          <img matListAvatar src='assets/beer.png' alt=''>
-          <p matLine >{{brewery.name}}</p>
+      <mat-list-option role='listitem' *ngFor='let brewery of brews' [value]='brewery' [selected]='brewery.id === selectedOptions?.[0]?.id'>
+        <img matListAvatar src='assets/beer.png' alt=''>
+        <p matLine >{{brewery.name}}</p>
       </mat-list-option>
     </mat-selection-list>
   </div>
   <div class='table'>
-    <app-brewery-details [brewery]='selectedOptions[0]' *ngIf="selectedOptions[0]"></app-brewery-details>
+    <app-brewery-details [brewery]='selectedOptions?.[0]' *ngIf="selectedOptions?.[0]"></app-brewery-details>
   </div>
 </section>

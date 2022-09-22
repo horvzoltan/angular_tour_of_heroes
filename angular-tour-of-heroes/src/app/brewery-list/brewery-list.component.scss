@@ -14,6 +14,10 @@ section {
 }
 
 .mid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 10px;
+  align-items: start;
   width: 1200px;
 
   .list {
@@ -21,6 +25,8 @@ section {
     margin-bottom: 40px;
     padding: 10px;
     border-radius: 6px;
+  }
+  .table {
   }
 }
 
@@ -37,8 +43,10 @@ section {
 
 @media only screen and (max-width: 1200px) {
   .mid {
+    display: flex;
     flex-direction: column;
     width: 60%;
+    align-items: normal;
   }
 }
 
