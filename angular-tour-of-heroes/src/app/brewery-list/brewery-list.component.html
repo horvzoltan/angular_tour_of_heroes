@@ -1,7 +1,7 @@
 <section class='mid'>
   <div class='list'>
-    <mat-selection-list #selection [multiple]='false' [(ngModel)]="selectedOptions" (ngModelChange)="onNgModelChange($event)" dense>
-      <mat-list-option role='listitem' *ngFor='let brewery of brews' [value]='brewery'>
+    <mat-selection-list [multiple]='false' [(ngModel)]="selectedOptions" (ngModelChange)="onNgModelChange($event)" dense>
+      <mat-list-option role='listitem' *ngFor='let brewery of brews' [value]='brewery' [selected]='brewery == selected'>
           <img matListAvatar src='assets/beer.png' alt=''>
           <p matLine >{{brewery.name}}</p>
       </mat-list-option>

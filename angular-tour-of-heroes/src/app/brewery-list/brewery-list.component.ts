@@ -12,6 +12,7 @@ import {map} from 'rxjs/operators';
 export class BreweryListComponent implements OnInit {
   brews: Brewery[] = [];
   selectedOptions: Array<Brewery> = [];
+  selected: Brewery = this.brews[0];
 
   constructor(private breweryService: BreweryService) {
   }
