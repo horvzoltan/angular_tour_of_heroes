@@ -11,6 +11,7 @@ import {map} from 'rxjs/operators';
 
 export class BreweryListComponent implements OnInit {
   brews: Brewery[] = [];
+  selectedOptions: Array<Brewery> = [];
 
   constructor(private breweryService: BreweryService) {
   }
@@ -32,4 +33,9 @@ export class BreweryListComponent implements OnInit {
         this.brews = brews;
       });
   }
+
+  onNgModelChange(breweries: Brewery[]) {
+    this.selectedOptions = breweries;
+  }
+
 }
