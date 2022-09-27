@@ -26,8 +26,6 @@ section {
     padding: 10px;
     border-radius: 6px;
   }
-  .table {
-  }
 }
 
 .mat-list-item {
@@ -36,9 +34,21 @@ section {
   border-radius: 6px;
 }
 
-.mat-list-single-selected-option, .mat-list-single-selected-option:hover, .mat-list-single-selected-option:focus {
+.mat-list-single-selected-option,
+.mat-list-single-selected-option:hover,
+.mat-list-single-selected-option:focus {
   background: $pink-selected;
   color: white;
+}
+
+.mat-icon-button {
+  color: black;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0.7;
+  transform: scale(0.8);
+  background-color: white;
 }
 
 @media only screen and (max-width: 1200px) {

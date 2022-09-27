@@ -38,10 +38,6 @@ export class SubmitFormComponent implements OnInit {
   ngOnInit(): void {
     console.log(this.route.snapshot.paramMap.get('postal-code'));
 
-    this.newBrewery
-      .get('postal_code')
-      ?.setValue(this.route.snapshot.paramMap.get('postal-code'));
-
     this.newBrewery.patchValue({
       postal_code: this.route.snapshot.paramMap.get('postal-code'),
     });
