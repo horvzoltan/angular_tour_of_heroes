@@ -18,7 +18,8 @@
           mat-icon-button
           disableRipple
           aria-label="Open in Submit"
-          [routerLink]="['/submit', brewery.postal_code]"
+          [routerLink]="['/submit']"
+          [queryParams]="{ pc: brewery.postal_code }"
         >
           <mat-icon>open_in_new</mat-icon>
         </button>

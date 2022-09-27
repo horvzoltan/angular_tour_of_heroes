@@ -8,7 +8,6 @@ const routes: Routes = [
   { path: 'users', component: BreweryListComponent },
   { path: 'brewlist', component: BreweryListComponent },
   { path: 'submit', component: SubmitFormComponent },
-  { path: 'submit/:postal-code', component: SubmitFormComponent },
 ];
 
 @NgModule({

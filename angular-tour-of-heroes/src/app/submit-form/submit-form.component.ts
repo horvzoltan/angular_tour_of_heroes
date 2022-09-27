@@ -36,11 +36,11 @@ export class SubmitFormComponent implements OnInit {
   constructor(private fb: FormBuilder, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    console.log(this.route.snapshot.paramMap.get('postal-code'));
-
-    this.newBrewery.patchValue({
-      postal_code: this.route.snapshot.paramMap.get('postal-code'),
-    });
+    this.route.queryParams.subscribe((params) =>
+      this.newBrewery.patchValue({
+        postal_code: params['pc'],
+      })
+    );
   }
 
   onSubmit() {
