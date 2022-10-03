@@ -1,35 +1,35 @@
-<section class="mid">
-  <div class="list">
+<section class='mid'>
+  <div class='list'>
     <mat-selection-list
-      [multiple]="false"
-      [(ngModel)]="selectedOptions"
-      (ngModelChange)="onNgModelChange($event)"
+      [multiple]='false'
+      [(ngModel)]='selectedOptions'
+      (ngModelChange)='onNgModelChange($event)'
       dense
     >
       <mat-list-option
-        role="listitem"
-        *ngFor="let brewery of brews"
-        [value]="brewery"
-        [selected]="brewery.id === selectedOptions?.[0]?.id"
+        role='listitem'
+        *ngFor='let brewery of brews'
+        [value]='brewery'
+        [selected]='brewery.id === selectedOptions?.[0]?.id'
       >
-        <img matListAvatar src="assets/beer.png" alt="" />
+        <img matListAvatar src='assets/beer.png' alt=''/>
         <p matLine>{{ brewery.name }}</p>
         <button
           mat-icon-button
           disableRipple
-          aria-label="Open in Submit"
+          aria-label='Open in Submit'
           [routerLink]="['/submit']"
-          [queryParams]="{ pc: brewery.postal_code }"
+          [queryParams]='{ pc: brewery.postal_code }'
         >
           <mat-icon>open_in_new</mat-icon>
         </button>
       </mat-list-option>
     </mat-selection-list>
   </div>
-  <div class="table">
+  <div class='table'>
     <app-brewery-details
-      [brewery]="selectedOptions?.[0]"
-      *ngIf="selectedOptions?.[0]"
+      [brewery]='selectedOptions?.[0]'
+      *ngIf='selectedOptions?.[0]'
     ></app-brewery-details>
   </div>
 </section>

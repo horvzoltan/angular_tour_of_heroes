@@ -1,8 +1,8 @@
-import { HttpClient, HttpHandler } from '@angular/common/http';
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-import { BreweryListComponent } from 'src/app/brewery-list/brewery-list.component';
-import { BreweryService } from '../../shared/services/brewery.service';
-import { BreweryServiceMock } from 'src/shared/mock/brewery.service.mock';
+import {HttpClient, HttpHandler} from '@angular/common/http';
+import {ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
+import {BreweryListComponent} from 'src/app/brewery-list/brewery-list.component';
+import {BreweryService} from '../../shared/services/brewery.service';
+import {BreweryServiceMock} from 'src/shared/mock/brewery.service.mock';
 import {MatSelectModule} from '@angular/material/select';
 import {MatListModule} from '@angular/material/list';
 import {CommonModule} from '@angular/common';
@@ -19,10 +19,10 @@ describe('BreweryListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MatSelectModule, MatListModule, CommonModule, FormsModule, RouterTestingModule,MatIconModule,MatCardModule],
-      declarations: [BreweryListComponent,BreweryDetailsComponent],
+      imports: [MatSelectModule, MatListModule, CommonModule, FormsModule, RouterTestingModule, MatIconModule, MatCardModule],
+      declarations: [BreweryListComponent, BreweryDetailsComponent],
       providers: [
-        { provide: BreweryService, useClass: BreweryServiceMock },
+        {provide: BreweryService, useClass: BreweryServiceMock},
         HttpClient,
         HttpHandler,
       ],
