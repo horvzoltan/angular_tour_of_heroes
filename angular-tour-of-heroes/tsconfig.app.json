@@ -8,7 +8,7 @@
   "files": [
     "src/main.ts",
     "src/polyfills.ts",
-    "src/shared/interfaces/breweryS.ts"
+    "src/shared/interfaces/breweryShrink.ts"
   ],
   "include": [
     "src/**/*.d.ts"

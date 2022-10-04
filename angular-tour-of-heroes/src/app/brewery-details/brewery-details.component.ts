@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import {BreweryS} from '../../shared/interfaces/breweryS';
+import {BreweryShrink} from '../../shared/interfaces/breweryShrink';
 
 @Component({
   selector: 'app-brewery-details',
@@ -7,7 +7,7 @@ import {BreweryS} from '../../shared/interfaces/breweryS';
   styleUrls: ['./brewery-details.component.scss'],
 })
 export class BreweryDetailsComponent implements OnInit {
-  @Input() brewery?: BreweryS;
+  @Input() brewery?: BreweryShrink;
 
   constructor() {}
 

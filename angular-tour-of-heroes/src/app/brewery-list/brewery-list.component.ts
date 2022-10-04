@@ -1,7 +1,7 @@
 import {ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit} from '@angular/core';
 import {BreweryService} from '../../shared/services/brewery.service';
 import {map} from 'rxjs/operators';
-import {BreweryS} from '../../shared/interfaces/breweryS';
+import {BreweryShrink} from '../../shared/interfaces/breweryShrink';
 
 @Component({
   selector: 'app-brewery-list',
@@ -11,8 +11,8 @@ import {BreweryS} from '../../shared/interfaces/breweryS';
 })
 
 export class BreweryListComponent implements OnInit {
-  brews: BreweryS[] = [];
-  selectedOptions!: Array<BreweryS> | null;
+  brews: BreweryShrink[] = [];
+  selectedOptions!: Array<BreweryShrink> | null;
 
   constructor(
     private breweryService: BreweryService,
@@ -30,7 +30,7 @@ export class BreweryListComponent implements OnInit {
           breweries.filter((brewery) =>
             !!brewery.street
           ).map((brewery) => {
-            return <BreweryS>{
+            return <BreweryShrink>{
               id: brewery.id,
               name: brewery.name,
               postal_code: brewery.postal_code,
@@ -41,16 +41,16 @@ export class BreweryListComponent implements OnInit {
         )
       )
       .subscribe(
-      brews => {
-        console.log(brews);
-        this.brews = brews;
-        this.selectedOptions = [];
-        this.cd.detectChanges();
-        this.selectedOptions.push(this.brews[0]);
-      });
+        brews => {
+          console.log(brews);
+          this.brews = brews;
+          this.selectedOptions = [];
+          this.cd.detectChanges();
+          this.selectedOptions.push(this.brews[0]);
+        });
   }
 
-  onNgModelChange(breweries: BreweryS[]) {
+  onNgModelChange(breweries: BreweryShrink[]) {
     this.selectedOptions = [];
     this.cd.detectChanges();
     this.selectedOptions.push(breweries[0]);

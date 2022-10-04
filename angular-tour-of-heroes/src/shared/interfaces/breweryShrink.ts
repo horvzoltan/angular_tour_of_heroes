@@ -1,4 +1,4 @@
-export interface BreweryS {
+export interface BreweryShrink {
   id: string | null,
   name: string | null,
   postal_code: string | null,
