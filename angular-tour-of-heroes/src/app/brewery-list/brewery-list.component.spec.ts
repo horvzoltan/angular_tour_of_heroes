@@ -55,6 +55,7 @@ describe('BreweryListComponent', () => {
 
   it('should have list items', waitForAsync(() => {
     expect(fixture.debugElement.query(By.css('.mat-list-item'))).toBeTruthy();
+    console.log(fixture.debugElement.query(By.css('.mat-list-item')).nativeElement);
   }));
 
 });
