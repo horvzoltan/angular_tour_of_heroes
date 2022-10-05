@@ -1,9 +1,10 @@
-import { Injectable } from '@angular/core';
-import {asyncScheduler, of, scheduled} from 'rxjs';
+import {Injectable} from '@angular/core';
+import {of} from 'rxjs';
 
 @Injectable()
 export class BreweryServiceMock {
-  constructor() {}
+  constructor() {
+  }
 
   getAllBrews(): any {
     return of(
@@ -17,7 +18,7 @@ export class BreweryServiceMock {
           address_3: null,
           city: 'Knox',
           state: 'Indiana',
-          county_province: null,
+          county_providence: null,
           postal_code: '46534',
           country: 'United States',
           longitude: '-86.627954',
@@ -36,7 +37,7 @@ export class BreweryServiceMock {
           address_3: null,
           city: 'Bend',
           state: 'Oregon',
-          county_province: null,
+          county_providence: null,
           postal_code: '97701-9847',
           country: 'United States',
           longitude: '-121.28170597038259',

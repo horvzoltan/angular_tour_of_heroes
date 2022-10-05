@@ -49,13 +49,17 @@ describe('BreweryListComponent', () => {
   }));
 
   it('should have length 2', waitForAsync(() => {
-    console.log(comp.brews.length);
     expect(comp.brews.length).toEqual(2);
   }));
 
   it('should have list items', waitForAsync(() => {
     expect(fixture.debugElement.query(By.css('.mat-list-item'))).toBeTruthy();
-    console.log(fixture.debugElement.query(By.css('.mat-list-item')).nativeElement);
   }));
 
+  it('should match content', waitForAsync(() => {
+    fixture.debugElement.queryAll(By.css('.mat-list-item')).map((e, index) => {
+      const name: string = index == 0 ? '10-56 Brewing Company' : '10 Barrel Brewing Co';
+      expect(e.nativeElement.textContent).toContain(name);
+    });
+  }));
 });

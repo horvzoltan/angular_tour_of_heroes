@@ -42,7 +42,6 @@ export class BreweryListComponent implements OnInit {
       )
       .subscribe(
         brews => {
-          console.log(brews);
           this.brews = brews;
           this.selectedOptions = [];
           this.cd.detectChanges();
