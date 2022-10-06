@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Observable, of} from 'rxjs';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
-import {catchError, tap} from 'rxjs/operators';
+import {catchError} from 'rxjs/operators';
 import {Brewery} from '../interfaces/brewery';
 
 @Injectable({
@@ -30,14 +30,12 @@ export class BreweryService {
       );
   }
 
-  private handleError<T>(operation = 'operation', result?: T) {
+  private handleError<T>(operation = 'operation', result?: T): (error: any) => Observable<T> {
     return (error: any): Observable<T> => {
 
-      console.error(error);
-
-      console.log(`${operation} failed: ${error.message}`);
-
-      return of(result as T);
+      const array = [error,result];
+      // console.log(`${operation} failed: ${error.message}`);
+      return of(array as any);
     };
   }
 }

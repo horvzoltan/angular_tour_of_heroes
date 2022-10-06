@@ -19,7 +19,15 @@ describe('BreweryListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MatSelectModule, MatListModule, CommonModule, FormsModule, RouterTestingModule, MatIconModule, MatCardModule],
+      imports: [
+        MatSelectModule,
+        MatListModule,
+        CommonModule,
+        FormsModule,
+        RouterTestingModule,
+        MatIconModule,
+        MatCardModule,
+      ],
       declarations: [BreweryListComponent, BreweryDetailsComponent],
       providers: [
         {provide: BreweryService, useClass: BreweryServiceMock},
@@ -58,7 +66,8 @@ describe('BreweryListComponent', () => {
 
   it('should match content', waitForAsync(() => {
     fixture.debugElement.queryAll(By.css('.mat-list-item')).map((e, index) => {
-      const name: string = index == 0 ? '10-56 Brewing Company' : '10 Barrel Brewing Co';
+      const name: string =
+        index == 0 ? '10-56 Brewing Company' : '10 Barrel Brewing Co';
       expect(e.nativeElement.textContent).toContain(name);
     });
   }));
