@@ -60,4 +60,8 @@ describe('BreweryDetailsComponent', () => {
   it('should have', waitForAsync(() => {
     console.log(fixture.debugElement.nativeElement.querySelectorAll('.property-container')[0]);
   }));
+
+
+  // TODO test the test the content inside property-container
+
 });
