@@ -56,4 +56,8 @@ describe('BreweryDetailsComponent', () => {
   it('should have 4 property containers', waitForAsync(() => {
     expect(fixture.debugElement.nativeElement.querySelectorAll('.property-container').length).toEqual(4);
   }));
+
+  it('should have', waitForAsync(() => {
+    console.log(fixture.debugElement.nativeElement.querySelectorAll('.property-container')[0]);
+  }));
 });
