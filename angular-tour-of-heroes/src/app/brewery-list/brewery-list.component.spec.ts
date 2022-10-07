@@ -71,4 +71,5 @@ describe('BreweryListComponent', () => {
       expect(e.nativeElement.textContent).toContain(name);
     });
   }));
+
 });

@@ -58,10 +58,11 @@ describe('BreweryDetailsComponent', () => {
   }));
 
   it('should have', waitForAsync(() => {
-    console.log(fixture.debugElement.nativeElement.querySelectorAll('.property-container')[0]);
+    const props = fixture.debugElement.nativeElement.querySelectorAll('.property-container');
+    expect(props[0].textContent).toContain('Name');
+    expect(props[1].textContent).toContain('Postal Code');
+    expect(props[2].textContent).toContain('Phone');
+    expect(props[3].textContent).toContain('Created at');
   }));
-
-
-  // TODO test the test the content inside property-container
 
 });
