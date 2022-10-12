@@ -68,6 +68,7 @@ describe('BreweryServiceTest', () => {
       },
       error: done.fail,
     });
+
     expect(httpClientSpy.get.calls.count()).withContext('one call').toBe(1);
   });
 
