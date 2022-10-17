@@ -22,6 +22,7 @@ export const breweryReducer = createReducer(
     return {
       ...state,
       items: action.items,
+      selected: action.items[0],
     };
   })
 );
