@@ -1,29 +1,27 @@
 import { createAction, props } from '@ngrx/store';
-import { Brewery } from 'src/shared/interfaces/brewery';
+import { Brewery } from 'src/shared/classes/Brewery';
 
 export const NAMES = {
-  RETRIEVE_ITEMS: '[Product List/API] Retrieve Products',
-  ERROR_ITEM: '[Product List/API] Error',
-  RETRIEVE_ITEM: '[Product List/API] Retrieve Products',
-  LOAD_ITEM: '[Product] Load Product',
-  RETRIEVE_ITEMS_SUCCESS: '[Product List/API] Retrieve Products Success',
-};
+  ADD_ITEM: '[Brewery List] Add Brewery',
+  LOAD_ITEM: '[Brewery] Load Brewery',
+  RETRIEVE_ITEMS_SUCCESS: '[Brewery List/API] Retrieve Brewerys Success',
+  ERROR_ITEM: '[Brewery List/API] Error',
+  RETRIEVE_ITEMS: '[Brewery List/API] Retrieve Brewerys',
+  RETRIEVE_ITEM: '[Brewery List/API] Retrieve Brewery',
 
-// Reducer oriented actions
-export const loadItem = createAction(
-  NAMES.LOAD_ITEM,
-  props<{ item: Brewery }>()
-);
+  LOG_EVENT: '[Brewery] Log Event',
+};
 
 export const loadItems = createAction(
   NAMES.RETRIEVE_ITEMS_SUCCESS,
-  props<{ items: ReadonlyArray<Brewery> }>()
+  props<{ items: Array<Brewery> }>()
 );
 
 // Effect actions.
 export const getItems = createAction(NAMES.RETRIEVE_ITEMS);
 
-export const getItem = createAction(
-  NAMES.RETRIEVE_ITEM,
-  props<{ id: number }>()
+// Log.
+export const logEvent = createAction(
+  NAMES.LOG_EVENT,
+  props<{ message: string }>()
 );

@@ -1,4 +1,5 @@
 export interface Brewery {
+  [key: string]: any;
   id: string;
   name: string;
   brewery_type: string;

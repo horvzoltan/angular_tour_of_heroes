@@ -1,16 +1,10 @@
-import {
-  ChangeDetectionStrategy,
-  ChangeDetectorRef,
-  Component,
-  OnInit,
-} from '@angular/core';
-import { BreweryService } from '../../shared/services/brewery.service';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { BreweryShrink } from '../../shared/interfaces/breweryShrink';
 import { Observable } from 'rxjs';
-import { Store, select } from '@ngrx/store';
-import { selectBrewerys } from '../state/brewery.selectors';
+import { Store } from '@ngrx/store';
 import { getItems } from '../state/brewery.actions';
+import { selectBrewerys } from '../state/brewery.selectors';
 
 @Component({
   selector: 'app-brewery-list',
@@ -19,53 +13,37 @@ import { getItems } from '../state/brewery.actions';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class BreweryListComponent implements OnInit {
-  brews: Observable<readonly BreweryShrink[]> = this.store.pipe(
-    select(selectBrewerys)
+  brews: Observable<BreweryShrink[]> = this.store.select(selectBrewerys).pipe(
+    map((breweries) =>
+      breweries
+        .filter((brewery) => !!brewery.street)
+        .map((brewery) => {
+          return <BreweryShrink>{
+            id: brewery.id,
+            name: brewery.name,
+            postal_code: brewery.postal_code,
+            phone: brewery.phone,
+            created_at: brewery.created_at,
+          };
+        })
+    )
   );
 
   selectedOptions!: Array<BreweryShrink> | null;
 
-  selectedBrew!: Observable<BreweryShrink> | null;
-
-  constructor(
-    private breweryService: BreweryService,
-    private cd: ChangeDetectorRef,
-    private store: Store
-  ) {}
+  constructor(private store: Store) {}
 
   ngOnInit(): void {
     this.store.dispatch(getItems());
-  }
 
-  getBrews(): void {
-    this.breweryService
-      .getAllBrews()
+    this.brews
       .pipe(
-        map((breweries) =>
-          breweries
-            .filter((brewery) => !!brewery.street)
-            .map((brewery) => {
-              return <BreweryShrink>{
-                id: brewery.id,
-                name: brewery.name,
-                postal_code: brewery.postal_code,
-                phone: brewery.phone,
-                created_at: brewery.created_at,
-              };
-            })
-        )
+        map((brew) => {
+          return brew[0];
+        })
       )
-      .subscribe((brews) => {
-        this.brews = brews;
-        this.selectedOptions = [];
-        this.cd.detectChanges();
-        this.selectedOptions.push(this.brews[0]);
+      .subscribe((item) => {
+        this.selectedOptions = new Array(item);
       });
-  }
-
-  onNgModelChange(breweries: BreweryShrink[]) {
-    this.selectedOptions = [];
-    this.cd.detectChanges();
-    this.selectedOptions.push(breweries[0]);
   }
 }

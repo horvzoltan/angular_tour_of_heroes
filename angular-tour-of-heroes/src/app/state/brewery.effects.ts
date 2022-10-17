@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Actions, ofType, createEffect } from '@ngrx/effects';
-import { Action, Store } from '@ngrx/store';
+import { Action } from '@ngrx/store';
 import { BreweryService } from 'src/shared/services/brewery.service';
-import * as fromActions from './brewery.actions';
+import * as fromActions from 'src/app/state/brewery.actions';
 import { switchMap, catchError, map } from 'rxjs/operators';
 import { of, Observable } from 'rxjs';
-import { ActivatedRoute } from '@angular/router';
+import { Brewery } from 'src/shared/classes/Brewery';
 
 @Injectable()
 export class BreweryEffects {
@@ -13,18 +13,13 @@ export class BreweryEffects {
     return this.actions$.pipe(
       ofType(fromActions.getItems),
       switchMap(() => this.httpService.getAllBrews()),
-      map((items) => ({
-        type: fromActions.NAMES.RETRIEVE_ITEMS_SUCCESS,
-        items: items,
-      })),
+      map((items) => fromActions.loadItems({ items })),
       catchError((error) => of({ type: fromActions.NAMES.ERROR_ITEM, error }))
     );
   });
 
   constructor(
     private actions$: Actions,
-    private httpService: BreweryService,
-    private store$: Store<any>,
-    private ar: ActivatedRoute
+    private httpService: BreweryService<Brewery>
   ) {}
 }

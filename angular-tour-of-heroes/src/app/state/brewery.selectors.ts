@@ -1,5 +1,12 @@
-import { State } from './brewery.reducer';
+import { createFeatureSelector, createSelector } from '@ngrx/store';
+import { Brewery } from 'src/shared/classes/Brewery';
 
-export const selectBrewerys = (state: State) => state.brewerys.items;
+export const productsFeatureSelector = createFeatureSelector<{
+  items: Array<Brewery>;
+}>('brewerys');
 
-export const selectOneBrewery = (state: State) => state.brewerys.selected;
+export const selectBrews = (state: { items: Array<Brewery> }) => state.items;
+export const selectBrewerys = createSelector(
+  productsFeatureSelector,
+  selectBrews
+);

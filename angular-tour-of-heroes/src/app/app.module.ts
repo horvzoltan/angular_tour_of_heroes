@@ -17,8 +17,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from 'src/shared/material.module';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
-import { breweryReducer } from './state/brewery.reducer';
+import { breweryReducer } from './state/brewery.reducers';
 import { BreweryEffects } from './state/brewery.effects';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -39,10 +41,13 @@ import { BreweryEffects } from './state/brewery.effects';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MaterialModule,
-    StoreModule.forRoot({
-      brewerys: breweryReducer,
-    }),
+    StoreModule.forRoot({}),
+    StoreModule.forFeature('brewerys', breweryReducer),
     EffectsModule.forRoot([BreweryEffects]),
+    StoreDevtoolsModule.instrument({
+      maxAge: 10,
+      logOnly: environment.production,
+    }),
   ],
   providers: [
     {

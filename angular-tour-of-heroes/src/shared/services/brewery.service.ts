@@ -7,7 +7,7 @@ import { Brewery } from '../interfaces/brewery';
 @Injectable({
   providedIn: 'root',
 })
-export class BreweryService {
+export class BreweryService<T extends { id?: string }> {
   private brewUrl = 'https://api.openbrewerydb.org/breweries';
 
   httpOptions = {
@@ -23,10 +23,10 @@ export class BreweryService {
 
   constructor(private http: HttpClient) {}
 
-  getAllBrews(): Observable<Brewery[]> {
+  getAllBrews(): Observable<T[]> {
     return this.http
-      .get<Brewery[]>(this.brewUrl, this.httpOptions)
-      .pipe(catchError(this.handleError<Brewery[]>('getAllBrews', [])));
+      .get<T[]>(this.brewUrl, this.httpOptions)
+      .pipe(catchError(this.handleError<T[]>('getAllBrews', [])));
   }
 
   private handleError<T>(

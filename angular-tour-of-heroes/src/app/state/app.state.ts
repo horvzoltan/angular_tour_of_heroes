@@ -1,4 +1,4 @@
-import { Brewery } from 'src/shared/interfaces/brewery';
+import { Brewery } from 'src/shared/classes/Brewery';
 
 export interface AppState {
   brewerys: ReadonlyArray<Brewery>;
