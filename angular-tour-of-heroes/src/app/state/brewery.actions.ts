@@ -8,9 +8,13 @@ export const NAMES = {
   ERROR_ITEM: '[Brewery List/API] Error',
   RETRIEVE_ITEMS: '[Brewery List/API] Retrieve Brewerys',
   RETRIEVE_ITEM: '[Brewery List/API] Retrieve Brewery',
-  LOAD_SELECTED: '[Brewery] Load Selected',
   LOG_EVENT: '[Brewery] Log Event',
 };
+
+export const loadItem = createAction(
+  NAMES.LOAD_ITEM,
+  props<{ selected: Brewery }>()
+);
 
 export const loadItems = createAction(
   NAMES.RETRIEVE_ITEMS_SUCCESS,

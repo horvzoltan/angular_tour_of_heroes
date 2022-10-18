@@ -15,7 +15,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
 import { HttpLoadingInterceptor } from 'src/shared/interceptors/http-request-interceptor.interceptor';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from 'src/shared/material.module';
-import { StoreModule } from '@ngrx/store';
+import { provideState, provideStore, StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { breweryReducer } from './state/brewery.reducers';
 import { BreweryEffects } from './state/brewery.effects';
@@ -43,6 +43,7 @@ import { environment } from 'src/environments/environment';
     MaterialModule,
     StoreModule.forRoot({}),
     StoreModule.forFeature('brewerys', breweryReducer),
+    // StoreModule.forFeature('brewery', breweryReducer),
     EffectsModule.forRoot([BreweryEffects]),
     StoreDevtoolsModule.instrument({
       maxAge: 10,

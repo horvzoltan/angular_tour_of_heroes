@@ -3,8 +3,9 @@ import { map } from 'rxjs/operators';
 import { BreweryShrink } from '../../shared/interfaces/breweryShrink';
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
-import { getItems } from '../state/brewery.actions';
-import { selectBrewerys } from '../state/brewery.selectors';
+import { getItems, loadItem } from '../state/brewery.actions';
+import { selectBrewerys, selectBrewery } from '../state/brewery.selectors';
+import { Brewery } from 'src/shared/classes/Brewery';
 
 @Component({
   selector: 'app-brewery-list',
@@ -17,7 +18,16 @@ export class BreweryListComponent implements OnInit {
     map((breweries) =>
       breweries
         .filter((brewery) => !!brewery.street)
-        .map((brewery) => {
+        .map((brewery, index) => {
+          if (index === 0) {
+            this.selectedOptions = new Array<BreweryShrink>({
+              id: brewery.id,
+              name: brewery.name,
+              postal_code: brewery.postal_code,
+              phone: brewery.phone,
+              created_at: brewery.created_at,
+            });
+          }
           return <BreweryShrink>{
             id: brewery.id,
             name: brewery.name,
@@ -29,21 +39,15 @@ export class BreweryListComponent implements OnInit {
     )
   );
 
-  selectedOptions!: Array<BreweryShrink> | null;
+  selectedOptions!: BreweryShrink[] | null;
 
   constructor(private store: Store) {}
 
+  onChange(newValue: Brewery) {
+    this.store.dispatch(loadItem({ selected: newValue }));
+  }
+
   ngOnInit(): void {
     this.store.dispatch(getItems());
-
-    this.brews
-      .pipe(
-        map((brew) => {
-          return brew[0];
-        })
-      )
-      .subscribe((item) => {
-        this.selectedOptions = new Array(item);
-      });
   }
 }

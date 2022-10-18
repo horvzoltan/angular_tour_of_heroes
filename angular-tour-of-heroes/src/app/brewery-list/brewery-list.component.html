@@ -1,6 +1,11 @@
 <section class="mid">
   <div class="list">
-    <mat-selection-list [multiple]="false" [(ngModel)]="selectedOptions" dense>
+    <mat-selection-list
+      [multiple]="false"
+      [(ngModel)]="selectedOptions"
+      (ngModelChange)="onChange($event)"
+      dense
+    >
       <mat-list-option
         role="listitem"
         *ngFor="let brewery of brews | async"

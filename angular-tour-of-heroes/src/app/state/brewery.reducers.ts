@@ -1,6 +1,6 @@
 import { createReducer, on } from '@ngrx/store';
 
-import { loadItems } from './brewery.actions';
+import { loadItem, loadItems } from './brewery.actions';
 import { Brewery } from 'src/shared/classes/Brewery';
 
 export interface State {
@@ -22,7 +22,12 @@ export const breweryReducer = createReducer(
     return {
       ...state,
       items: action.items,
-      selected: action.items[0],
+    };
+  }),
+  on(loadItem, (state, action) => {
+    return {
+      ...state,
+      selected: action.selected,
     };
   })
 );
